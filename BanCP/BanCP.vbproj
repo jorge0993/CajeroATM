@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2523D490-5F4B-4080-BF01-E50203653BF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BanCP.My.MyApplication</StartupObject>
+    <RootNamespace>BanCP</RootNamespace>
+    <AssemblyName>BanCP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BanCP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BanCP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarUsuarios.Designer.vb">
+      <DependentUpon>AgregarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarPIN.Designer.vb">
+      <DependentUpon>CambiarPIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarPIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPIN.Designer.vb">
+      <DependentUpon>LoginPIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimientos.Designer.vb">
+      <DependentUpon>Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PagoServicios.Designer.vb">
+      <DependentUpon>PagoServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagoServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagosMenu.Designer.vb">
+      <DependentUpon>PagosMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagosMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recargas.Designer.vb">
+      <DependentUpon>Recargas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recargas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retiros.Designer.vb">
+      <DependentUpon>Retiros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Retiros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saldo.Designer.vb">
+      <DependentUpon>Saldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Saldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgregarUsuarios.resx">
+      <DependentUpon>AgregarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarPIN.resx">
+      <DependentUpon>CambiarPIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPIN.resx">
+      <DependentUpon>LoginPIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimientos.resx">
+      <DependentUpon>Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoServicios.resx">
+      <DependentUpon>PagoServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagosMenu.resx">
+      <DependentUpon>PagosMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recargas.resx">
+      <DependentUpon>Recargas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retiros.resx">
+      <DependentUpon>Retiros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saldo.resx">
+      <DependentUpon>Saldo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apellido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AT&amp;T_logo_2005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cantidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comprar_online_con_seguridad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmarPIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contraactual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contraNueva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-32056196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext215208151250778.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext215208679285420.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext215310309970690.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext215311768361331.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext215312682298178.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insertar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joV7apee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movistar_2010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\num.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numTarjeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retiros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightarrow22_6843.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saldo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de Credito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telcel_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telcel_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telcel-logo-mexico.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
