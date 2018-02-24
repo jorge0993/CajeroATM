@@ -48,7 +48,7 @@ Partial Class Saldo
         Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.pictureBox1.Image = Global.BanCP.My.Resources.Resources.saldo
-        Me.pictureBox1.Location = New System.Drawing.Point(112, 108)
+        Me.pictureBox1.Location = New System.Drawing.Point(110, 129)
         Me.pictureBox1.Name = "pictureBox1"
         Me.pictureBox1.Size = New System.Drawing.Size(522, 87)
         Me.pictureBox1.TabIndex = 21
