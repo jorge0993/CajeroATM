@@ -168,7 +168,6 @@ Partial Class AgregarUsuarios
         Me.txtSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSaldo.Location = New System.Drawing.Point(234, 188)
         Me.txtSaldo.Name = "txtSaldo"
-        Me.txtSaldo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtSaldo.Size = New System.Drawing.Size(146, 26)
         Me.txtSaldo.TabIndex = 37
         '
@@ -220,6 +219,7 @@ Partial Class AgregarUsuarios
         Me.txtNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNumero.Location = New System.Drawing.Point(234, 99)
         Me.txtNumero.Name = "txtNumero"
+        Me.txtNumero.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtNumero.Size = New System.Drawing.Size(146, 26)
         Me.txtNumero.TabIndex = 35
         '

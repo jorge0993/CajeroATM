@@ -46,6 +46,20 @@ Public Class Conexion
         End Try
     End Sub
 
+    Public Function agregarUsuario(ByVal Tarjeta As String, ByVal PIN As Integer, ByVal Nombres As String, ByVal Apellidos As String, ByVal Direccion As String, ByVal FechaAlta As String, ByVal TipoUsuario As Integer) As String
+        Dim Resultado As String = "Registro Exitoso"
+        Dim SaldoUsuario As Integer = 0
+        Try
+            Me.cmd = New SqlCommand(("Insert Into Usuarios(Numero_tarjeta,PIN,Saldo,Nombres,Apellidos,Direccion,FechaAlta,TipoUsuario) values
+                ('" + Tarjeta + "'," + PIN + "," + SaldoUsuario + ",'" + Nombres + "','" + Apellidos + "','" + Direccion + "','" + FechaAlta + "'," + TipoUsuario + ")"), Me.cn)
+
+            Me.cmd.ExecuteNonQuery()
+        Catch ex As Exception
+            Resultado = ("No se ha Realizado la insercion " + ex.ToString)
+        End Try
+        Return Resultado
+    End Function
+
 End Class
 
 
