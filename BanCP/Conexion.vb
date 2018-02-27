@@ -32,6 +32,19 @@ Public Class Conexion
             MsgBox(ex.Message)
         End Try
     End Sub
+    Public Sub EliminarUsuario(ByVal NumTarjeta As String)
+        Dim Sql As String = "Delete from Usuarios where Numero_tarjeta=" + NumTarjeta
+        Dim cmd As New SqlCommand(Sql, cn)
+
+        Try
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataSet
+
+            da.Fill(ds, "Usuarios")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 
     Public Function agregarUsuario(ByVal Tarjeta As String, ByVal PIN As Integer, ByVal Nombres As String, ByVal Apellidos As String, ByVal Direccion As String, ByVal FechaAlta As String, ByVal TipoUsuario As Integer) As String
         Dim Resultado As String = "Registro Exitoso"
@@ -48,3 +61,5 @@ Public Class Conexion
     End Function
 
 End Class
+
+

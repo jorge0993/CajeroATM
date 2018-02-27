@@ -33,8 +33,13 @@
 
     End Sub
 
+    Private Sub btEliminar_Click(sender As Object, e As EventArgs) Handles btEliminar.Click
+        con.EliminarUsuario(txtNumero.Text)
+        con.mostrarUsuarios(dgUsuarios)
+    End Sub
+
     Private Sub btAgregar_Click(sender As Object, e As EventArgs) Handles btAgregar.Click
         MsgBox(con.agregarUsuario(txtNumero.Text.ToString(), Convert.ToInt32(txtPIN.Text), txtNombre.Text.ToString(), txtApellidos.Text.ToString(), txtDireccion.Text.ToString(), Date.Today.ToShortDateString(), CBusu.SelectedIndex + 1), MsgBoxStyle.OkOnly, "Notificación")
-        dgUsuarios.DataSource = dgUsuarios.DataSource
+        con.mostrarUsuarios(dgUsuarios)
     End Sub
 End Class

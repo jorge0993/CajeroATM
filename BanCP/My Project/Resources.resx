@@ -118,17 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Telcel_logo.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Telcel_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Apellido" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Apellido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rightarrow22_6843" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rightarrow22_6843.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AT&amp;T_logo_2005" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AT&amp;T_logo_2005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nombre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nombre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cantidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cantidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="joV7apee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\joV7apee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cooltext215208679285420" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cooltext215208679285420.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cfe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cfe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,29 +139,35 @@
   <data name="comprar_online_con_seguridad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comprar_online_con_seguridad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="confirmar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\confirmar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="confirmarPIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\confirmarPIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="contraactual" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contraactual.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="numTarjeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\numTarjeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cantidad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cantidad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AT&amp;T_logo_2005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AT&amp;T_logo_2005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Movistar_2010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Movistar_2010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tarjeta de Credito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tarjeta de Credito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="contraNueva" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\contraNueva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coollogo_com-32056196" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coollogo_com-32056196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cooltext215208151250778" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cooltext215208151250778.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cooltext215208679285420" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cooltext215208679285420.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cooltext215310309970690" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cooltext215310309970690.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telcel-logo-mexico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telcel-logo-mexico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cooltext215311768361331" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cooltext215311768361331.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,67 +175,67 @@
   <data name="cooltext215312682298178" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cooltext215312682298178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Insertar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Insertar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joV7apee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joV7apee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mov" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Movistar_2010" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Movistar_2010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nombre" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nombre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="num" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\num.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="numTarjeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\numTarjeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="retiros" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\retiros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rightarrow22_6843" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rightarrow22_6843.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="saldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\saldo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tarjeta de Credito" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tarjeta de Credito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="num" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\num.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Insertar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Insertar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confirmar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confirmar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saldo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saldo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confirmarPIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confirmarPIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="retiros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retiros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cooltext215208151250778" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cooltext215208151250778.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cooltext277528209695650" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cooltext277528209695650.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mov.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saldoingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saldoingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Telcel_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Telcel_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Telcel_logo.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Telcel_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telcel-logo-mexico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telcel-logo-mexico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Apellido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apellido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coollogo_com-32056196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coollogo_com-32056196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TipoUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TipoUser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
