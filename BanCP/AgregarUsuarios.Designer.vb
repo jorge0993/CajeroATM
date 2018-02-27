@@ -22,16 +22,16 @@ Partial Class AgregarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.pictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btRegresar = New System.Windows.Forms.Button()
         Me.dgUsuarios = New System.Windows.Forms.DataGridView()
+        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Saldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbConfirmar = New System.Windows.Forms.Label()
         Me.tbConfirmar = New System.Windows.Forms.TextBox()
         Me.btAgregar = New System.Windows.Forms.Button()
@@ -41,104 +41,8 @@ Partial Class AgregarUsuarios
         Me.tbNombre = New System.Windows.Forms.TextBox()
         Me.tbPIN = New System.Windows.Forms.TextBox()
         Me.tbTarjeta = New System.Windows.Forms.TextBox()
-        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Saldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pictureBox8
-        '
-        Me.pictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox8.Location = New System.Drawing.Point(72, 309)
-        Me.pictureBox8.Name = "pictureBox8"
-        Me.pictureBox8.Size = New System.Drawing.Size(131, 36)
-        Me.pictureBox8.TabIndex = 53
-        Me.pictureBox8.TabStop = False
-        '
-        'pictureBox7
-        '
-        Me.pictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox7.Location = New System.Drawing.Point(80, 277)
-        Me.pictureBox7.Name = "pictureBox7"
-        Me.pictureBox7.Size = New System.Drawing.Size(123, 36)
-        Me.pictureBox7.TabIndex = 52
-        Me.pictureBox7.TabStop = False
-        '
-        'pictureBox6
-        '
-        Me.pictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox6.Location = New System.Drawing.Point(87, 245)
-        Me.pictureBox6.Name = "pictureBox6"
-        Me.pictureBox6.Size = New System.Drawing.Size(116, 36)
-        Me.pictureBox6.TabIndex = 51
-        Me.pictureBox6.TabStop = False
-        '
-        'pictureBox5
-        '
-        Me.pictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox5.Location = New System.Drawing.Point(14, 213)
-        Me.pictureBox5.Name = "pictureBox5"
-        Me.pictureBox5.Size = New System.Drawing.Size(189, 36)
-        Me.pictureBox5.TabIndex = 50
-        Me.pictureBox5.TabStop = False
-        '
-        'pictureBox4
-        '
-        Me.pictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox4.Location = New System.Drawing.Point(141, 181)
-        Me.pictureBox4.Name = "pictureBox4"
-        Me.pictureBox4.Size = New System.Drawing.Size(62, 36)
-        Me.pictureBox4.TabIndex = 49
-        Me.pictureBox4.TabStop = False
-        '
-        'pictureBox3
-        '
-        Me.pictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox3.Location = New System.Drawing.Point(4, 148)
-        Me.pictureBox3.Name = "pictureBox3"
-        Me.pictureBox3.Size = New System.Drawing.Size(199, 36)
-        Me.pictureBox3.TabIndex = 48
-        Me.pictureBox3.TabStop = False
-        '
-        'pictureBox1
-        '
-        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox1.Location = New System.Drawing.Point(4, 35)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(538, 72)
-        Me.pictureBox1.TabIndex = 47
-        Me.pictureBox1.TabStop = False
-        '
-        'pictureBox2
-        '
-        Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Location = New System.Drawing.Point(726, 16)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(271, 91)
-        Me.pictureBox2.TabIndex = 46
-        Me.pictureBox2.TabStop = False
         '
         'btRegresar
         '
@@ -161,6 +65,66 @@ Partial Class AgregarUsuarios
         Me.dgUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgUsuarios.Size = New System.Drawing.Size(552, 267)
         Me.dgUsuarios.TabIndex = 44
+        '
+        'Nombres
+        '
+        Me.Nombres.DataPropertyName = "Nombres"
+        Me.Nombres.HeaderText = "Nombre"
+        Me.Nombres.Name = "Nombres"
+        Me.Nombres.ReadOnly = True
+        '
+        'Apellidos
+        '
+        Me.Apellidos.DataPropertyName = "Apellidos"
+        Me.Apellidos.HeaderText = "Apellido"
+        Me.Apellidos.Name = "Apellidos"
+        Me.Apellidos.ReadOnly = True
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        '
+        'Saldo
+        '
+        Me.Saldo.DataPropertyName = "Saldo"
+        Me.Saldo.HeaderText = "Saldo"
+        Me.Saldo.Name = "Saldo"
+        Me.Saldo.ReadOnly = True
+        '
+        'Numero_tarjeta
+        '
+        Me.Numero_tarjeta.DataPropertyName = "Numero_tarjeta"
+        Me.Numero_tarjeta.HeaderText = "No. Tarjeta"
+        Me.Numero_tarjeta.Name = "Numero_tarjeta"
+        Me.Numero_tarjeta.ReadOnly = True
+        Me.Numero_tarjeta.Visible = False
+        '
+        'PIN
+        '
+        Me.PIN.DataPropertyName = "PIN"
+        Me.PIN.HeaderText = "PIN"
+        Me.PIN.Name = "PIN"
+        Me.PIN.ReadOnly = True
+        Me.PIN.Visible = False
+        '
+        'FechaAlta
+        '
+        Me.FechaAlta.DataPropertyName = "FechaAlta"
+        Me.FechaAlta.HeaderText = "Fecha_Alta"
+        Me.FechaAlta.Name = "FechaAlta"
+        Me.FechaAlta.ReadOnly = True
+        Me.FechaAlta.Visible = False
+        '
+        'TipoUsuario
+        '
+        Me.TipoUsuario.DataPropertyName = "TipoUsuario"
+        Me.TipoUsuario.HeaderText = "Tipo"
+        Me.TipoUsuario.Name = "TipoUsuario"
+        Me.TipoUsuario.ReadOnly = True
+        Me.TipoUsuario.Visible = False
         '
         'lbConfirmar
         '
@@ -245,79 +209,11 @@ Partial Class AgregarUsuarios
         Me.tbTarjeta.Size = New System.Drawing.Size(146, 26)
         Me.tbTarjeta.TabIndex = 35
         '
-        'Nombres
-        '
-        Me.Nombres.DataPropertyName = "Nombres"
-        Me.Nombres.HeaderText = "Nombre"
-        Me.Nombres.Name = "Nombres"
-        Me.Nombres.ReadOnly = True
-        '
-        'Apellidos
-        '
-        Me.Apellidos.DataPropertyName = "Apellidos"
-        Me.Apellidos.HeaderText = "Apellido"
-        Me.Apellidos.Name = "Apellidos"
-        Me.Apellidos.ReadOnly = True
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Direccion"
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        '
-        'Saldo
-        '
-        Me.Saldo.DataPropertyName = "Saldo"
-        Me.Saldo.HeaderText = "Saldo"
-        Me.Saldo.Name = "Saldo"
-        Me.Saldo.ReadOnly = True
-        '
-        'Numero_tarjeta
-        '
-        Me.Numero_tarjeta.DataPropertyName = "Numero_tarjeta"
-        Me.Numero_tarjeta.HeaderText = "No. Tarjeta"
-        Me.Numero_tarjeta.Name = "Numero_tarjeta"
-        Me.Numero_tarjeta.ReadOnly = True
-        Me.Numero_tarjeta.Visible = False
-        '
-        'PIN
-        '
-        Me.PIN.DataPropertyName = "PIN"
-        Me.PIN.HeaderText = "PIN"
-        Me.PIN.Name = "PIN"
-        Me.PIN.ReadOnly = True
-        Me.PIN.Visible = False
-        '
-        'FechaAlta
-        '
-        Me.FechaAlta.DataPropertyName = "FechaAlta"
-        Me.FechaAlta.HeaderText = "Fecha_Alta"
-        Me.FechaAlta.Name = "FechaAlta"
-        Me.FechaAlta.ReadOnly = True
-        Me.FechaAlta.Visible = False
-        '
-        'TipoUsuario
-        '
-        Me.TipoUsuario.DataPropertyName = "TipoUsuario"
-        Me.TipoUsuario.HeaderText = "Tipo"
-        Me.TipoUsuario.Name = "TipoUsuario"
-        Me.TipoUsuario.ReadOnly = True
-        Me.TipoUsuario.Visible = False
-        '
         'AgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1005, 456)
-        Me.Controls.Add(Me.pictureBox8)
-        Me.Controls.Add(Me.pictureBox7)
-        Me.Controls.Add(Me.pictureBox6)
-        Me.Controls.Add(Me.pictureBox5)
-        Me.Controls.Add(Me.pictureBox4)
-        Me.Controls.Add(Me.pictureBox3)
-        Me.Controls.Add(Me.pictureBox1)
-        Me.Controls.Add(Me.pictureBox2)
         Me.Controls.Add(Me.btRegresar)
         Me.Controls.Add(Me.dgUsuarios)
         Me.Controls.Add(Me.lbConfirmar)
@@ -331,28 +227,11 @@ Partial Class AgregarUsuarios
         Me.Controls.Add(Me.tbTarjeta)
         Me.Name = "AgregarUsuarios"
         Me.Text = "AgregarUsuarios"
-        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Private WithEvents pictureBox8 As PictureBox
-    Private WithEvents pictureBox7 As PictureBox
-    Private WithEvents pictureBox6 As PictureBox
-    Private WithEvents pictureBox5 As PictureBox
-    Private WithEvents pictureBox4 As PictureBox
-    Private WithEvents pictureBox3 As PictureBox
-    Private WithEvents pictureBox1 As PictureBox
-    Private WithEvents pictureBox2 As PictureBox
     Private WithEvents btRegresar As Button
     Private WithEvents dgUsuarios As DataGridView
     Private WithEvents lbConfirmar As Label
