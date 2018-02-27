@@ -1,5 +1,8 @@
 ﻿Public Class AgregarUsuarios
-    Private Sub tbPIN_TextChanged(sender As Object, e As EventArgs) Handles txtPIN.TextChanged
 
+    Dim con = New Conexion
+
+    Private Sub AgregarUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        con.mostrarUsuarios(dgUsuarios)
     End Sub
 End Class
