@@ -32,5 +32,20 @@ Public Class Conexion
             MsgBox(ex.Message)
         End Try
     End Sub
+    Public Sub EliminarUsuario(ByVal NumTarjeta As String)
+        Dim Sql As String = "Delete from Usuarios where Numero_tarjeta=" + NumTarjeta
+        Dim cmd As New SqlCommand(Sql, cn)
+
+        Try
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataSet
+
+            da.Fill(ds, "Usuarios")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 
 End Class
+
+

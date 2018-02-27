@@ -32,4 +32,9 @@
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
+
+    Private Sub btEliminar_Click(sender As Object, e As EventArgs) Handles btEliminar.Click
+        con.EliminarUsuario(txtNumero.Text)
+        con.mostrarUsuarios(dgUsuarios)
+    End Sub
 End Class
