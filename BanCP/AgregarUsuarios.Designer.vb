@@ -270,6 +270,7 @@ Partial Class AgregarUsuarios
         'CBusu
         '
         Me.CBusu.FormattingEnabled = True
+        Me.CBusu.Items.AddRange(New Object() {"ADMINISTRATOR", "USUARIO"})
         Me.CBusu.Location = New System.Drawing.Point(213, 320)
         Me.CBusu.Name = "CBusu"
         Me.CBusu.Size = New System.Drawing.Size(146, 21)
