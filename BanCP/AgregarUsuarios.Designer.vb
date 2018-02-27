@@ -22,115 +22,27 @@ Partial Class AgregarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.pictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btRegresar = New System.Windows.Forms.Button()
         Me.dataGridView1 = New System.Windows.Forms.DataGridView()
         Me.lbConfirmar = New System.Windows.Forms.Label()
-        Me.tbConfirmar = New System.Windows.Forms.TextBox()
+        Me.txtSaldo = New System.Windows.Forms.TextBox()
         Me.btAgregar = New System.Windows.Forms.Button()
         Me.lbTiempo = New System.Windows.Forms.Label()
-        Me.tbDireccion = New System.Windows.Forms.TextBox()
-        Me.tbApellidos = New System.Windows.Forms.TextBox()
-        Me.tbNombre = New System.Windows.Forms.TextBox()
-        Me.tbPIN = New System.Windows.Forms.TextBox()
-        Me.tbTarjeta = New System.Windows.Forms.TextBox()
-        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtDireccion = New System.Windows.Forms.TextBox()
+        Me.txtApellidos = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtPIN = New System.Windows.Forms.TextBox()
+        Me.txtTarjeta = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pictureBox8
-        '
-        Me.pictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox8.Location = New System.Drawing.Point(72, 309)
-        Me.pictureBox8.Name = "pictureBox8"
-        Me.pictureBox8.Size = New System.Drawing.Size(131, 36)
-        Me.pictureBox8.TabIndex = 53
-        Me.pictureBox8.TabStop = False
-        '
-        'pictureBox7
-        '
-        Me.pictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox7.Location = New System.Drawing.Point(80, 277)
-        Me.pictureBox7.Name = "pictureBox7"
-        Me.pictureBox7.Size = New System.Drawing.Size(123, 36)
-        Me.pictureBox7.TabIndex = 52
-        Me.pictureBox7.TabStop = False
-        '
-        'pictureBox6
-        '
-        Me.pictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox6.Location = New System.Drawing.Point(87, 245)
-        Me.pictureBox6.Name = "pictureBox6"
-        Me.pictureBox6.Size = New System.Drawing.Size(116, 36)
-        Me.pictureBox6.TabIndex = 51
-        Me.pictureBox6.TabStop = False
-        '
-        'pictureBox5
-        '
-        Me.pictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox5.Location = New System.Drawing.Point(14, 213)
-        Me.pictureBox5.Name = "pictureBox5"
-        Me.pictureBox5.Size = New System.Drawing.Size(189, 36)
-        Me.pictureBox5.TabIndex = 50
-        Me.pictureBox5.TabStop = False
-        '
-        'pictureBox4
-        '
-        Me.pictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox4.Location = New System.Drawing.Point(141, 181)
-        Me.pictureBox4.Name = "pictureBox4"
-        Me.pictureBox4.Size = New System.Drawing.Size(62, 36)
-        Me.pictureBox4.TabIndex = 49
-        Me.pictureBox4.TabStop = False
-        '
-        'pictureBox3
-        '
-        Me.pictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox3.Location = New System.Drawing.Point(4, 148)
-        Me.pictureBox3.Name = "pictureBox3"
-        Me.pictureBox3.Size = New System.Drawing.Size(199, 36)
-        Me.pictureBox3.TabIndex = 48
-        Me.pictureBox3.TabStop = False
-        '
-        'pictureBox1
-        '
-        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox1.Location = New System.Drawing.Point(4, 35)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(538, 72)
-        Me.pictureBox1.TabIndex = 47
-        Me.pictureBox1.TabStop = False
-        '
-        'pictureBox2
-        '
-        Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Location = New System.Drawing.Point(726, 16)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(271, 91)
-        Me.pictureBox2.TabIndex = 46
-        Me.pictureBox2.TabStop = False
         '
         'btRegresar
         '
@@ -144,9 +56,9 @@ Partial Class AgregarUsuarios
         'dataGridView1
         '
         Me.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dataGridView1.Location = New System.Drawing.Point(431, 113)
+        Me.dataGridView1.Location = New System.Drawing.Point(382, 113)
         Me.dataGridView1.Name = "dataGridView1"
-        Me.dataGridView1.Size = New System.Drawing.Size(552, 267)
+        Me.dataGridView1.Size = New System.Drawing.Size(601, 267)
         Me.dataGridView1.TabIndex = 44
         '
         'lbConfirmar
@@ -160,19 +72,19 @@ Partial Class AgregarUsuarios
         Me.lbConfirmar.TabIndex = 43
         Me.lbConfirmar.Text = "                                                    "
         '
-        'tbConfirmar
+        'txtSaldo
         '
-        Me.tbConfirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbConfirmar.Location = New System.Drawing.Point(213, 223)
-        Me.tbConfirmar.Name = "tbConfirmar"
-        Me.tbConfirmar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbConfirmar.Size = New System.Drawing.Size(146, 26)
-        Me.tbConfirmar.TabIndex = 37
+        Me.txtSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSaldo.Location = New System.Drawing.Point(193, 110)
+        Me.txtSaldo.Name = "txtSaldo"
+        Me.txtSaldo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtSaldo.Size = New System.Drawing.Size(146, 26)
+        Me.txtSaldo.TabIndex = 37
         '
         'btAgregar
         '
         Me.btAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btAgregar.Location = New System.Drawing.Point(153, 392)
+        Me.btAgregar.Location = New System.Drawing.Point(155, 297)
         Me.btAgregar.Name = "btAgregar"
         Me.btAgregar.Size = New System.Drawing.Size(109, 35)
         Me.btAgregar.TabIndex = 41
@@ -191,104 +103,175 @@ Partial Class AgregarUsuarios
         Me.lbTiempo.TabIndex = 42
         Me.lbTiempo.Text = "                                                    "
         '
-        'tbDireccion
+        'txtDireccion
         '
-        Me.tbDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbDireccion.Location = New System.Drawing.Point(213, 319)
-        Me.tbDireccion.Name = "tbDireccion"
-        Me.tbDireccion.Size = New System.Drawing.Size(146, 26)
-        Me.tbDireccion.TabIndex = 40
+        Me.txtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDireccion.Location = New System.Drawing.Point(141, 213)
+        Me.txtDireccion.Name = "txtDireccion"
+        Me.txtDireccion.Size = New System.Drawing.Size(198, 26)
+        Me.txtDireccion.TabIndex = 40
         '
-        'tbApellidos
+        'txtApellidos
         '
-        Me.tbApellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbApellidos.Location = New System.Drawing.Point(213, 287)
-        Me.tbApellidos.Name = "tbApellidos"
-        Me.tbApellidos.Size = New System.Drawing.Size(146, 26)
-        Me.tbApellidos.TabIndex = 39
+        Me.txtApellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtApellidos.Location = New System.Drawing.Point(141, 178)
+        Me.txtApellidos.Name = "txtApellidos"
+        Me.txtApellidos.Size = New System.Drawing.Size(198, 26)
+        Me.txtApellidos.TabIndex = 39
         '
-        'tbNombre
+        'txtNombre
         '
-        Me.tbNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbNombre.Location = New System.Drawing.Point(213, 255)
-        Me.tbNombre.Name = "tbNombre"
-        Me.tbNombre.Size = New System.Drawing.Size(146, 26)
-        Me.tbNombre.TabIndex = 38
+        Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(141, 147)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(198, 26)
+        Me.txtNombre.TabIndex = 38
         '
-        'tbPIN
+        'txtPIN
         '
-        Me.tbPIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbPIN.Location = New System.Drawing.Point(213, 191)
-        Me.tbPIN.Name = "tbPIN"
-        Me.tbPIN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbPIN.Size = New System.Drawing.Size(146, 26)
-        Me.tbPIN.TabIndex = 36
+        Me.txtPIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPIN.Location = New System.Drawing.Point(193, 74)
+        Me.txtPIN.Name = "txtPIN"
+        Me.txtPIN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPIN.Size = New System.Drawing.Size(146, 26)
+        Me.txtPIN.TabIndex = 36
         '
-        'tbTarjeta
+        'txtTarjeta
         '
-        Me.tbTarjeta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbTarjeta.Location = New System.Drawing.Point(213, 158)
-        Me.tbTarjeta.Name = "tbTarjeta"
-        Me.tbTarjeta.Size = New System.Drawing.Size(146, 26)
-        Me.tbTarjeta.TabIndex = 35
+        Me.txtTarjeta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTarjeta.Location = New System.Drawing.Point(193, 34)
+        Me.txtTarjeta.Name = "txtTarjeta"
+        Me.txtTarjeta.Size = New System.Drawing.Size(146, 26)
+        Me.txtTarjeta.TabIndex = 35
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(53, 43)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(134, 17)
+        Me.Label1.TabIndex = 46
+        Me.Label1.Text = "Numero De Tarjeta:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(152, 83)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 17)
+        Me.Label2.TabIndex = 47
+        Me.Label2.Text = "PIN:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(138, 119)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(49, 17)
+        Me.Label3.TabIndex = 48
+        Me.Label3.Text = "Saldo:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(53, 147)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 17)
+        Me.Label4.TabIndex = 49
+        Me.Label4.Text = "Nombres:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(53, 187)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(70, 17)
+        Me.Label5.TabIndex = 50
+        Me.Label5.Text = "Apellidos:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(49, 222)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(74, 17)
+        Me.Label6.TabIndex = 51
+        Me.Label6.Text = "Direcciòn:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(70, 259)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(113, 17)
+        Me.Label8.TabIndex = 53
+        Me.Label8.Text = "Tipo de Usuario:"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"ADMINISTRADOR", "USUARIO"})
+        Me.ComboBox1.Location = New System.Drawing.Point(189, 255)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(150, 21)
+        Me.ComboBox1.TabIndex = 55
         '
         'AgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1005, 456)
-        Me.Controls.Add(Me.pictureBox8)
-        Me.Controls.Add(Me.pictureBox7)
-        Me.Controls.Add(Me.pictureBox6)
-        Me.Controls.Add(Me.pictureBox5)
-        Me.Controls.Add(Me.pictureBox4)
-        Me.Controls.Add(Me.pictureBox3)
-        Me.Controls.Add(Me.pictureBox1)
-        Me.Controls.Add(Me.pictureBox2)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btRegresar)
         Me.Controls.Add(Me.dataGridView1)
         Me.Controls.Add(Me.lbConfirmar)
-        Me.Controls.Add(Me.tbConfirmar)
+        Me.Controls.Add(Me.txtSaldo)
         Me.Controls.Add(Me.btAgregar)
         Me.Controls.Add(Me.lbTiempo)
-        Me.Controls.Add(Me.tbDireccion)
-        Me.Controls.Add(Me.tbApellidos)
-        Me.Controls.Add(Me.tbNombre)
-        Me.Controls.Add(Me.tbPIN)
-        Me.Controls.Add(Me.tbTarjeta)
+        Me.Controls.Add(Me.txtDireccion)
+        Me.Controls.Add(Me.txtApellidos)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.txtPIN)
+        Me.Controls.Add(Me.txtTarjeta)
         Me.Name = "AgregarUsuarios"
         Me.Text = "AgregarUsuarios"
-        CType(Me.pictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Private WithEvents pictureBox8 As PictureBox
-    Private WithEvents pictureBox7 As PictureBox
-    Private WithEvents pictureBox6 As PictureBox
-    Private WithEvents pictureBox5 As PictureBox
-    Private WithEvents pictureBox4 As PictureBox
-    Private WithEvents pictureBox3 As PictureBox
-    Private WithEvents pictureBox1 As PictureBox
-    Private WithEvents pictureBox2 As PictureBox
     Private WithEvents btRegresar As Button
     Private WithEvents dataGridView1 As DataGridView
     Private WithEvents lbConfirmar As Label
-    Private WithEvents tbConfirmar As TextBox
+    Private WithEvents txtSaldo As TextBox
     Private WithEvents btAgregar As Button
     Private WithEvents lbTiempo As Label
-    Private WithEvents tbDireccion As TextBox
-    Private WithEvents tbApellidos As TextBox
-    Private WithEvents tbNombre As TextBox
-    Private WithEvents tbPIN As TextBox
-    Private WithEvents tbTarjeta As TextBox
+    Private WithEvents txtDireccion As TextBox
+    Private WithEvents txtApellidos As TextBox
+    Private WithEvents txtNombre As TextBox
+    Private WithEvents txtPIN As TextBox
+    Private WithEvents txtTarjeta As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
