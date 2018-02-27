@@ -32,4 +32,9 @@
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
+
+    Private Sub btAgregar_Click(sender As Object, e As EventArgs) Handles btAgregar.Click
+        MsgBox(con.agregarUsuario(txtNumero.Text.ToString(), Convert.ToInt32(txtPIN.Text), txtNombre.Text.ToString(), txtApellidos.Text.ToString(), txtDireccion.Text.ToString(), Date.Today.ToShortDateString(), CBusu.SelectedIndex + 1), MsgBoxStyle.OkOnly, "Notificación")
+        dgUsuarios.DataSource = dgUsuarios.DataSource
+    End Sub
 End Class
