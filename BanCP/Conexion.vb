@@ -49,11 +49,16 @@ Public Class Conexion
     Public Function agregarUsuario(ByVal Tarjeta As String, ByVal PIN As Long, ByVal Nombres As String, ByVal Apellidos As String, ByVal Direccion As String, ByVal FechaAlta As String, ByVal TipoUsuario As Integer) As String
         Dim Resultado As String = "Registro Exitoso"
         Dim SaldoUsuario As Integer = 0
-        Dim Sql As String = "Insert Into Usuarios(Numero_tarjeta,PIN,Saldo,Nombres,Apellidos,Direccion,FechaAlta,TipoUsuario) values('" & Tarjeta & "'," & PIN & "," & SaldoUsuario & ",'" & Nombres & "','" & Apellidos & "','" & Direccion & "','" & FechaAlta & "'," & TipoUsuario & ")"
         Try
+            Dim Sql As String = "Select Numero_tarjeta from Usuarios where Numero_tarjeta='" & Tarjeta & "'"
             Me.cmd = New SqlCommand(Sql, Me.cn)
-
-            Me.cmd.ExecuteNonQuery()
+            If Me.cmd.ExecuteNonQuery() = 1 Then
+                MsgBox("Ya hay un usuario registrado con ese número de tarjeta." & vbNewLine & "No. de Tarjeta " + Tarjeta)
+            Else
+                Sql = "Insert Into Usuarios(Numero_tarjeta,PIN,Saldo,Nombres,Apellidos,Direccion,FechaAlta,TipoUsuario) values('" & Tarjeta & "'," & PIN & "," & SaldoUsuario & ",'" & Nombres & "','" & Apellidos & "','" & Direccion & "','" & FechaAlta & "'," & TipoUsuario & ")"
+                Me.cmd = New SqlCommand(Sql, Me.cn)
+                Me.cmd.ExecuteNonQuery()
+            End If
         Catch ex As Exception
             Resultado = ("No se ha Realizado la insercion " + ex.ToString)
         End Try
