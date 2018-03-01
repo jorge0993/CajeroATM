@@ -33,7 +33,6 @@ Partial Class AgregarUsuarios
         Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbConfirmar = New System.Windows.Forms.Label()
-        Me.txtSaldo = New System.Windows.Forms.TextBox()
         Me.btAgregar = New System.Windows.Forms.Button()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.txtApellidos = New System.Windows.Forms.TextBox()
@@ -56,7 +55,6 @@ Partial Class AgregarUsuarios
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.btEliminar = New System.Windows.Forms.Button()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +64,6 @@ Partial Class AgregarUsuarios
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -157,19 +154,11 @@ Partial Class AgregarUsuarios
         Me.lbConfirmar.AutoSize = True
         Me.lbConfirmar.BackColor = System.Drawing.Color.Transparent
         Me.lbConfirmar.ForeColor = System.Drawing.Color.White
-        Me.lbConfirmar.Location = New System.Drawing.Point(144, 372)
+        Me.lbConfirmar.Location = New System.Drawing.Point(144, 325)
         Me.lbConfirmar.Name = "lbConfirmar"
         Me.lbConfirmar.Size = New System.Drawing.Size(163, 13)
         Me.lbConfirmar.TabIndex = 43
         Me.lbConfirmar.Text = "                                                    "
-        '
-        'txtSaldo
-        '
-        Me.txtSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSaldo.Location = New System.Drawing.Point(234, 188)
-        Me.txtSaldo.Name = "txtSaldo"
-        Me.txtSaldo.Size = New System.Drawing.Size(146, 26)
-        Me.txtSaldo.TabIndex = 37
         '
         'btAgregar
         '
@@ -184,7 +173,7 @@ Partial Class AgregarUsuarios
         'txtDireccion
         '
         Me.txtDireccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDireccion.Location = New System.Drawing.Point(234, 316)
+        Me.txtDireccion.Location = New System.Drawing.Point(234, 269)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(146, 26)
         Me.txtDireccion.TabIndex = 40
@@ -192,7 +181,7 @@ Partial Class AgregarUsuarios
         'txtApellidos
         '
         Me.txtApellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtApellidos.Location = New System.Drawing.Point(234, 275)
+        Me.txtApellidos.Location = New System.Drawing.Point(234, 228)
         Me.txtApellidos.Name = "txtApellidos"
         Me.txtApellidos.Size = New System.Drawing.Size(146, 26)
         Me.txtApellidos.TabIndex = 39
@@ -200,7 +189,7 @@ Partial Class AgregarUsuarios
         'txtNombre
         '
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(234, 232)
+        Me.txtNombre.Location = New System.Drawing.Point(234, 185)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(146, 26)
         Me.txtNombre.TabIndex = 38
@@ -244,7 +233,7 @@ Partial Class AgregarUsuarios
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(181, 201)
+        Me.Label3.Location = New System.Drawing.Point(181, 154)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 48
@@ -253,7 +242,7 @@ Partial Class AgregarUsuarios
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(171, 245)
+        Me.Label4.Location = New System.Drawing.Point(171, 198)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 49
@@ -262,7 +251,7 @@ Partial Class AgregarUsuarios
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(166, 288)
+        Me.Label5.Location = New System.Drawing.Point(166, 241)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 50
@@ -271,7 +260,7 @@ Partial Class AgregarUsuarios
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(163, 339)
+        Me.Label6.Location = New System.Drawing.Point(163, 292)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(55, 13)
         Me.Label6.TabIndex = 51
@@ -280,7 +269,7 @@ Partial Class AgregarUsuarios
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(138, 376)
+        Me.Label7.Location = New System.Drawing.Point(138, 329)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(85, 13)
         Me.Label7.TabIndex = 52
@@ -290,7 +279,7 @@ Partial Class AgregarUsuarios
         '
         Me.CBusu.FormattingEnabled = True
         Me.CBusu.Items.AddRange(New Object() {"ADMINISTRATOR", "USUARIO"})
-        Me.CBusu.Location = New System.Drawing.Point(234, 368)
+        Me.CBusu.Location = New System.Drawing.Point(234, 321)
         Me.CBusu.Name = "CBusu"
         Me.CBusu.Size = New System.Drawing.Size(146, 21)
         Me.CBusu.TabIndex = 53
@@ -311,7 +300,7 @@ Partial Class AgregarUsuarios
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox1.Image = Global.BanCP.My.Resources.Resources.cooltext215312682298178
-        Me.PictureBox1.Location = New System.Drawing.Point(94, 316)
+        Me.PictureBox1.Location = New System.Drawing.Point(94, 269)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(134, 43)
         Me.PictureBox1.TabIndex = 55
@@ -355,7 +344,7 @@ Partial Class AgregarUsuarios
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox6.Image = Global.BanCP.My.Resources.Resources.Apellido
-        Me.PictureBox6.Location = New System.Drawing.Point(104, 275)
+        Me.PictureBox6.Location = New System.Drawing.Point(104, 228)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(124, 43)
         Me.PictureBox6.TabIndex = 59
@@ -366,7 +355,7 @@ Partial Class AgregarUsuarios
         Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox7.Image = Global.BanCP.My.Resources.Resources.nombre
-        Me.PictureBox7.Location = New System.Drawing.Point(109, 232)
+        Me.PictureBox7.Location = New System.Drawing.Point(109, 185)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(119, 43)
         Me.PictureBox7.TabIndex = 60
@@ -382,23 +371,12 @@ Partial Class AgregarUsuarios
         Me.btEliminar.Text = "Eliminar"
         Me.btEliminar.UseVisualStyleBackColor = True
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox8.Image = Global.BanCP.My.Resources.Resources.saldoingresar
-        Me.PictureBox8.Location = New System.Drawing.Point(128, 180)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(100, 43)
-        Me.PictureBox8.TabIndex = 62
-        Me.PictureBox8.TabStop = False
-        '
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox9.Image = Global.BanCP.My.Resources.Resources.TipoUser
-        Me.PictureBox9.Location = New System.Drawing.Point(-5, 355)
+        Me.PictureBox9.Location = New System.Drawing.Point(-5, 308)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(233, 43)
         Me.PictureBox9.TabIndex = 63
@@ -411,7 +389,6 @@ Partial Class AgregarUsuarios
         Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
         Me.ClientSize = New System.Drawing.Size(1005, 456)
         Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.btEliminar)
         Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.PictureBox6)
@@ -431,7 +408,6 @@ Partial Class AgregarUsuarios
         Me.Controls.Add(Me.btRegresar)
         Me.Controls.Add(Me.dgUsuarios)
         Me.Controls.Add(Me.lbConfirmar)
-        Me.Controls.Add(Me.txtSaldo)
         Me.Controls.Add(Me.btAgregar)
         Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtApellidos)
@@ -448,7 +424,6 @@ Partial Class AgregarUsuarios
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -457,7 +432,6 @@ Partial Class AgregarUsuarios
     Private WithEvents btRegresar As Button
     Private WithEvents dgUsuarios As DataGridView
     Private WithEvents lbConfirmar As Label
-    Private WithEvents txtSaldo As TextBox
     Private WithEvents btAgregar As Button
     Private WithEvents txtDireccion As TextBox
     Private WithEvents txtApellidos As TextBox
@@ -488,6 +462,5 @@ Partial Class AgregarUsuarios
     Private WithEvents PictureBox6 As PictureBox
     Private WithEvents PictureBox7 As PictureBox
     Private WithEvents btEliminar As Button
-    Private WithEvents PictureBox8 As PictureBox
     Private WithEvents PictureBox9 As PictureBox
 End Class
