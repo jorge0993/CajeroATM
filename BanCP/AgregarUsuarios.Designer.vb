@@ -24,14 +24,6 @@ Partial Class AgregarUsuarios
     Private Sub InitializeComponent()
         Me.btRegresar = New System.Windows.Forms.Button()
         Me.dgUsuarios = New System.Windows.Forms.DataGridView()
-        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Saldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbConfirmar = New System.Windows.Forms.Label()
         Me.btAgregar = New System.Windows.Forms.Button()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
@@ -56,6 +48,16 @@ Partial Class AgregarUsuarios
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.btEliminar = New System.Windows.Forms.Button()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.btModificar = New System.Windows.Forms.Button()
+        Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Saldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btLimpiar = New System.Windows.Forms.Button()
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,73 +83,13 @@ Partial Class AgregarUsuarios
         Me.dgUsuarios.AllowUserToAddRows = False
         Me.dgUsuarios.AllowUserToDeleteRows = False
         Me.dgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombres, Me.Apellidos, Me.Direccion, Me.Saldo, Me.Numero_tarjeta, Me.PIN, Me.FechaAlta, Me.TipoUsuario})
-        Me.dgUsuarios.Location = New System.Drawing.Point(431, 113)
+        Me.dgUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Numero_tarjeta, Me.Nombres, Me.Apellidos, Me.Direccion, Me.TipoUsuario, Me.PIN, Me.Saldo, Me.FechaAlta})
+        Me.dgUsuarios.Location = New System.Drawing.Point(406, 113)
         Me.dgUsuarios.Name = "dgUsuarios"
         Me.dgUsuarios.ReadOnly = True
         Me.dgUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgUsuarios.Size = New System.Drawing.Size(552, 267)
+        Me.dgUsuarios.Size = New System.Drawing.Size(577, 267)
         Me.dgUsuarios.TabIndex = 44
-        '
-        'Nombres
-        '
-        Me.Nombres.DataPropertyName = "Nombres"
-        Me.Nombres.HeaderText = "Nombre"
-        Me.Nombres.Name = "Nombres"
-        Me.Nombres.ReadOnly = True
-        '
-        'Apellidos
-        '
-        Me.Apellidos.DataPropertyName = "Apellidos"
-        Me.Apellidos.HeaderText = "Apellido"
-        Me.Apellidos.Name = "Apellidos"
-        Me.Apellidos.ReadOnly = True
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Direccion"
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        '
-        'Saldo
-        '
-        Me.Saldo.DataPropertyName = "Saldo"
-        Me.Saldo.HeaderText = "Saldo"
-        Me.Saldo.Name = "Saldo"
-        Me.Saldo.ReadOnly = True
-        '
-        'Numero_tarjeta
-        '
-        Me.Numero_tarjeta.DataPropertyName = "Numero_tarjeta"
-        Me.Numero_tarjeta.HeaderText = "No. Tarjeta"
-        Me.Numero_tarjeta.Name = "Numero_tarjeta"
-        Me.Numero_tarjeta.ReadOnly = True
-        Me.Numero_tarjeta.Visible = False
-        '
-        'PIN
-        '
-        Me.PIN.DataPropertyName = "PIN"
-        Me.PIN.HeaderText = "PIN"
-        Me.PIN.Name = "PIN"
-        Me.PIN.ReadOnly = True
-        Me.PIN.Visible = False
-        '
-        'FechaAlta
-        '
-        Me.FechaAlta.DataPropertyName = "FechaAlta"
-        Me.FechaAlta.HeaderText = "Fecha_Alta"
-        Me.FechaAlta.Name = "FechaAlta"
-        Me.FechaAlta.ReadOnly = True
-        Me.FechaAlta.Visible = False
-        '
-        'TipoUsuario
-        '
-        Me.TipoUsuario.DataPropertyName = "TipoUsuario"
-        Me.TipoUsuario.HeaderText = "Tipo"
-        Me.TipoUsuario.Name = "TipoUsuario"
-        Me.TipoUsuario.ReadOnly = True
-        Me.TipoUsuario.Visible = False
         '
         'lbConfirmar
         '
@@ -277,6 +219,8 @@ Partial Class AgregarUsuarios
         '
         'CBusu
         '
+        Me.CBusu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.CBusu.FormattingEnabled = True
         Me.CBusu.Items.AddRange(New Object() {"ADMINISTRATOR", "USUARIO"})
         Me.CBusu.Location = New System.Drawing.Point(234, 321)
@@ -382,12 +326,94 @@ Partial Class AgregarUsuarios
         Me.PictureBox9.TabIndex = 63
         Me.PictureBox9.TabStop = False
         '
+        'btModificar
+        '
+        Me.btModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btModificar.Location = New System.Drawing.Point(310, 409)
+        Me.btModificar.Name = "btModificar"
+        Me.btModificar.Size = New System.Drawing.Size(109, 35)
+        Me.btModificar.TabIndex = 64
+        Me.btModificar.Text = "Modificar"
+        Me.btModificar.UseVisualStyleBackColor = True
+        Me.btModificar.Visible = False
+        '
+        'Numero_tarjeta
+        '
+        Me.Numero_tarjeta.DataPropertyName = "Numero_tarjeta"
+        Me.Numero_tarjeta.HeaderText = "No. Tarjeta"
+        Me.Numero_tarjeta.Name = "Numero_tarjeta"
+        Me.Numero_tarjeta.ReadOnly = True
+        '
+        'Nombres
+        '
+        Me.Nombres.DataPropertyName = "Nombres"
+        Me.Nombres.HeaderText = "Nombre"
+        Me.Nombres.Name = "Nombres"
+        Me.Nombres.ReadOnly = True
+        '
+        'Apellidos
+        '
+        Me.Apellidos.DataPropertyName = "Apellidos"
+        Me.Apellidos.HeaderText = "Apellido"
+        Me.Apellidos.Name = "Apellidos"
+        Me.Apellidos.ReadOnly = True
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        '
+        'TipoUsuario
+        '
+        Me.TipoUsuario.DataPropertyName = "TipoUsuario"
+        Me.TipoUsuario.HeaderText = "Tipo"
+        Me.TipoUsuario.Name = "TipoUsuario"
+        Me.TipoUsuario.ReadOnly = True
+        '
+        'PIN
+        '
+        Me.PIN.DataPropertyName = "PIN"
+        Me.PIN.HeaderText = "PIN"
+        Me.PIN.Name = "PIN"
+        Me.PIN.ReadOnly = True
+        Me.PIN.Visible = False
+        '
+        'Saldo
+        '
+        Me.Saldo.DataPropertyName = "Saldo"
+        Me.Saldo.HeaderText = "Saldo"
+        Me.Saldo.Name = "Saldo"
+        Me.Saldo.ReadOnly = True
+        Me.Saldo.Visible = False
+        '
+        'FechaAlta
+        '
+        Me.FechaAlta.DataPropertyName = "FechaAlta"
+        Me.FechaAlta.HeaderText = "Fecha_Alta"
+        Me.FechaAlta.Name = "FechaAlta"
+        Me.FechaAlta.ReadOnly = True
+        Me.FechaAlta.Visible = False
+        '
+        'btLimpiar
+        '
+        Me.btLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btLimpiar.Location = New System.Drawing.Point(550, 409)
+        Me.btLimpiar.Name = "btLimpiar"
+        Me.btLimpiar.Size = New System.Drawing.Size(133, 35)
+        Me.btLimpiar.TabIndex = 65
+        Me.btLimpiar.Text = "Limpiar campos"
+        Me.btLimpiar.UseVisualStyleBackColor = True
+        '
         'AgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
         Me.ClientSize = New System.Drawing.Size(1005, 456)
+        Me.Controls.Add(Me.btLimpiar)
+        Me.Controls.Add(Me.btModificar)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.btEliminar)
         Me.Controls.Add(Me.PictureBox7)
@@ -438,14 +464,6 @@ Partial Class AgregarUsuarios
     Private WithEvents txtNombre As TextBox
     Private WithEvents txtPIN As TextBox
     Private WithEvents txtNumero As TextBox
-    Friend WithEvents Nombres As DataGridViewTextBoxColumn
-    Friend WithEvents Apellidos As DataGridViewTextBoxColumn
-    Friend WithEvents Direccion As DataGridViewTextBoxColumn
-    Friend WithEvents Saldo As DataGridViewTextBoxColumn
-    Friend WithEvents Numero_tarjeta As DataGridViewTextBoxColumn
-    Friend WithEvents PIN As DataGridViewTextBoxColumn
-    Friend WithEvents FechaAlta As DataGridViewTextBoxColumn
-    Friend WithEvents TipoUsuario As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -463,4 +481,14 @@ Partial Class AgregarUsuarios
     Private WithEvents PictureBox7 As PictureBox
     Private WithEvents btEliminar As Button
     Private WithEvents PictureBox9 As PictureBox
+    Private WithEvents btModificar As Button
+    Friend WithEvents Numero_tarjeta As DataGridViewTextBoxColumn
+    Friend WithEvents Nombres As DataGridViewTextBoxColumn
+    Friend WithEvents Apellidos As DataGridViewTextBoxColumn
+    Friend WithEvents Direccion As DataGridViewTextBoxColumn
+    Friend WithEvents TipoUsuario As DataGridViewTextBoxColumn
+    Friend WithEvents PIN As DataGridViewTextBoxColumn
+    Friend WithEvents Saldo As DataGridViewTextBoxColumn
+    Friend WithEvents FechaAlta As DataGridViewTextBoxColumn
+    Private WithEvents btLimpiar As Button
 End Class
