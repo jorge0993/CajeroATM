@@ -18,7 +18,7 @@ Public Class Conexion
     'metodos a agregar   :)
 
     Public Sub mostrarUsuarios(dg As DataGridView)
-        Dim sql As String = "Select * from Usuarios"
+        Dim sql As String = "Select Numero_tarjeta, Nombres, Apellidos, Direccion, TipoUsuario from Usuarios"
         Dim cmd As New SqlCommand(sql, cn)
 
         Try
@@ -32,6 +32,7 @@ Public Class Conexion
             MsgBox(ex.Message)
         End Try
     End Sub
+
     Public Sub EliminarUsuario(ByVal NumTarjeta As String)
         Dim Sql As String = "Delete from Usuarios where Numero_tarjeta=" + NumTarjeta
         Dim cmd As New SqlCommand(Sql, cn)
@@ -64,6 +65,31 @@ Public Class Conexion
         End Try
         Return Resultado
     End Function
+
+    Public Sub ModificarPin(nuevoPin As Int16, numeroTarjeta As String)
+        Try
+            cmd = New SqlCommand("update Usuarios set PIN = " & nuevoPin & "where Numero_tarjeta = " & numeroTarjeta, cn)
+            If cmd.ExecuteNonQuery() Then
+                MessageBox.Show("PIN ha sido modificado")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error al modificar PIN: " & ex.Message)
+        End Try
+    End Sub
+
+    'Modifica los datos en la tabla usuario segun el numero de tarjeta
+    Public Sub ModificarUsuario(nombre As String, apellidos As String, direccion As String, numeroTarjeta As String, tipoUsuario As String)
+        Try
+            cmd = New SqlCommand("Update Usuarios set Nombres='" & nombre & "', Apellidos= '" & apellidos & "', Direccion= '" & direccion & "', TipoUsuario='" & tipoUsuario & "' where Numero_tarjeta= '" & numeroTarjeta & "'", cn)
+            If cmd.ExecuteNonQuery() Then
+                MessageBox.Show("Usuario modificado.")
+            Else
+                MessageBox.Show("Usuario no modificado")
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error al modificar usuario: " & ex.Message)
+        End Try
+    End Sub
 
 End Class
 
