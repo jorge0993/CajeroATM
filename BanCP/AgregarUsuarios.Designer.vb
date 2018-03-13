@@ -24,6 +24,14 @@ Partial Class AgregarUsuarios
     Private Sub InitializeComponent()
         Me.btRegresar = New System.Windows.Forms.Button()
         Me.dgUsuarios = New System.Windows.Forms.DataGridView()
+        Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Saldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.lbConfirmar = New System.Windows.Forms.Label()
         Me.btAgregar = New System.Windows.Forms.Button()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
@@ -49,14 +57,6 @@ Partial Class AgregarUsuarios
         Me.btEliminar = New System.Windows.Forms.Button()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.btModificar = New System.Windows.Forms.Button()
-        Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombres = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellidos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PIN = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Saldo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaAlta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btLimpiar = New System.Windows.Forms.Button()
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,6 +82,7 @@ Partial Class AgregarUsuarios
         '
         Me.dgUsuarios.AllowUserToAddRows = False
         Me.dgUsuarios.AllowUserToDeleteRows = False
+        Me.dgUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Numero_tarjeta, Me.Nombres, Me.Apellidos, Me.Direccion, Me.TipoUsuario, Me.PIN, Me.Saldo, Me.FechaAlta})
         Me.dgUsuarios.Location = New System.Drawing.Point(406, 113)
@@ -90,6 +91,65 @@ Partial Class AgregarUsuarios
         Me.dgUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgUsuarios.Size = New System.Drawing.Size(577, 267)
         Me.dgUsuarios.TabIndex = 44
+        '
+        'Numero_tarjeta
+        '
+        Me.Numero_tarjeta.DataPropertyName = "Numero_tarjeta"
+        Me.Numero_tarjeta.HeaderText = "No. Tarjeta"
+        Me.Numero_tarjeta.Name = "Numero_tarjeta"
+        Me.Numero_tarjeta.ReadOnly = True
+        '
+        'Nombres
+        '
+        Me.Nombres.DataPropertyName = "Nombres"
+        Me.Nombres.HeaderText = "Nombre"
+        Me.Nombres.Name = "Nombres"
+        Me.Nombres.ReadOnly = True
+        '
+        'Apellidos
+        '
+        Me.Apellidos.DataPropertyName = "Apellidos"
+        Me.Apellidos.HeaderText = "Apellido"
+        Me.Apellidos.Name = "Apellidos"
+        Me.Apellidos.ReadOnly = True
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        '
+        'TipoUsuario
+        '
+        Me.TipoUsuario.DataPropertyName = "TipoUsuario"
+        Me.TipoUsuario.HeaderText = "Tipo"
+        Me.TipoUsuario.Name = "TipoUsuario"
+        Me.TipoUsuario.ReadOnly = True
+        '
+        'PIN
+        '
+        Me.PIN.DataPropertyName = "PIN"
+        Me.PIN.HeaderText = "PIN"
+        Me.PIN.Name = "PIN"
+        Me.PIN.ReadOnly = True
+        Me.PIN.Visible = False
+        '
+        'Saldo
+        '
+        Me.Saldo.DataPropertyName = "Saldo"
+        Me.Saldo.HeaderText = "Saldo"
+        Me.Saldo.Name = "Saldo"
+        Me.Saldo.ReadOnly = True
+        Me.Saldo.Visible = False
+        '
+        'FechaAlta
+        '
+        Me.FechaAlta.DataPropertyName = "FechaAlta"
+        Me.FechaAlta.HeaderText = "Fecha_Alta"
+        Me.FechaAlta.Name = "FechaAlta"
+        Me.FechaAlta.ReadOnly = True
+        Me.FechaAlta.Visible = False
         '
         'lbConfirmar
         '
@@ -336,65 +396,6 @@ Partial Class AgregarUsuarios
         Me.btModificar.Text = "Modificar"
         Me.btModificar.UseVisualStyleBackColor = True
         Me.btModificar.Visible = False
-        '
-        'Numero_tarjeta
-        '
-        Me.Numero_tarjeta.DataPropertyName = "Numero_tarjeta"
-        Me.Numero_tarjeta.HeaderText = "No. Tarjeta"
-        Me.Numero_tarjeta.Name = "Numero_tarjeta"
-        Me.Numero_tarjeta.ReadOnly = True
-        '
-        'Nombres
-        '
-        Me.Nombres.DataPropertyName = "Nombres"
-        Me.Nombres.HeaderText = "Nombre"
-        Me.Nombres.Name = "Nombres"
-        Me.Nombres.ReadOnly = True
-        '
-        'Apellidos
-        '
-        Me.Apellidos.DataPropertyName = "Apellidos"
-        Me.Apellidos.HeaderText = "Apellido"
-        Me.Apellidos.Name = "Apellidos"
-        Me.Apellidos.ReadOnly = True
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Direccion"
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        '
-        'TipoUsuario
-        '
-        Me.TipoUsuario.DataPropertyName = "TipoUsuario"
-        Me.TipoUsuario.HeaderText = "Tipo"
-        Me.TipoUsuario.Name = "TipoUsuario"
-        Me.TipoUsuario.ReadOnly = True
-        '
-        'PIN
-        '
-        Me.PIN.DataPropertyName = "PIN"
-        Me.PIN.HeaderText = "PIN"
-        Me.PIN.Name = "PIN"
-        Me.PIN.ReadOnly = True
-        Me.PIN.Visible = False
-        '
-        'Saldo
-        '
-        Me.Saldo.DataPropertyName = "Saldo"
-        Me.Saldo.HeaderText = "Saldo"
-        Me.Saldo.Name = "Saldo"
-        Me.Saldo.ReadOnly = True
-        Me.Saldo.Visible = False
-        '
-        'FechaAlta
-        '
-        Me.FechaAlta.DataPropertyName = "FechaAlta"
-        Me.FechaAlta.HeaderText = "Fecha_Alta"
-        Me.FechaAlta.Name = "FechaAlta"
-        Me.FechaAlta.ReadOnly = True
-        Me.FechaAlta.Visible = False
         '
         'btLimpiar
         '
