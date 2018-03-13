@@ -5,7 +5,7 @@
 
     Private Sub AgregarUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         con.mostrarUsuarios(dgUsuarios)
-        clear()
+        'clear()
         Reset()
         dgUsuarios.ClearSelection()
         'btModificar.Visible = False
@@ -20,7 +20,7 @@
     End Sub
 
     Private Sub btAgregar_Click(sender As Object, e As EventArgs) Handles btAgregar.Click
-        MsgBox(con.agregarUsuario(txtNumero.Text.ToString(), Convert.ToInt32(txtPIN.Text), txtNombre.Text.ToString(), txtApellidos.Text.ToString(), txtDireccion.Text.ToString(), Convert.ToString(DateTime.Now.ToString("MM/dd/yyyy")), CBusu.SelectedIndex + 1), MsgBoxStyle.OkOnly, "Notificación")
+        MsgBox(con.agregarUsuario(txtNumero.Text.ToString(), Convert.ToInt32(txtPIN.Text), txtNombre.Text.ToString(), txtApellidos.Text.ToString(), txtDireccion.Text.ToString(), Convert.ToString(DateTime.Now.ToString("MM/dd/yyyy")), CBusu.SelectedIndex), MsgBoxStyle.OkOnly, "Notificación")
         con.mostrarUsuarios(dgUsuarios)
         clear()
     End Sub
@@ -70,7 +70,7 @@
                 txtNombre.Text = Me.dgUsuarios.CurrentRow.Cells("Nombres").Value.ToString()
                 txtApellidos.Text = Me.dgUsuarios.CurrentRow.Cells("Apellidos").Value.ToString()
                 txtDireccion.Text = Me.dgUsuarios.CurrentRow.Cells("Direccion").Value.ToString()
-                CBusu.Text = Me.dgUsuarios.CurrentRow.Cells("TipoUsuario").Value.ToString()
+                CBusu.SelectedIndex = Me.dgUsuarios.CurrentRow.Cells("TipoUsuario").Value
 
 
                 txtNumero.Enabled = False
