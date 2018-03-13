@@ -86,4 +86,10 @@
         Reset()
         clear()
     End Sub
+
+    Private Sub btRegresar_Click(sender As Object, e As EventArgs) Handles btRegresar.Click
+        Dim menu As New Menu
+        Me.Hide()
+        menu.Show()
+    End Sub
 End Class
