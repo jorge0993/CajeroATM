@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Conexion
+    Dim menu As New Menu
     Private cn As SqlConnection
     Private cmd As SqlCommand
     Private dr As SqlDataReader
@@ -91,6 +92,112 @@ Public Class Conexion
         End Try
     End Sub
 
+
+
+    Public Function ConsultarSaldo()
+        Dim SaldoDisponible As String = ""
+        cmd = New SqlCommand("Select Saldo from Usuarios where Numero_tarjeta='" + Tarjeta + "'", cn)
+        dr = cmd.ExecuteReader()
+        While (dr.Read())
+            SaldoDisponible = dr("Saldo").ToString()
+        End While
+        dr.Close()
+        Return SaldoDisponible
+    End Function
+
+    Public Function VerificarUsuario(Tarjeta As String)
+        Dim contador As Integer = 0
+        Try
+            cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" + Tarjeta + "'", cn)
+            dr = cmd.ExecuteReader()
+            While (dr.Read())
+                contador += 1
+            End While
+        Catch ex As Exception
+            MessageBox.Show("No se llevo a cabo la consulta " + ex.ToString())
+        End Try
+        cn.Close()
+        Return contador
+
+    End Function
+
+    Public Function ValidarRetiro(cantidad As Integer)
+        Dim Validar As Boolean = True
+        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" + Tarjeta + "'", cn)
+        dr = cmd.ExecuteReader()
+        While (dr.Read())
+            If (Convert.ToInt32(dr("Saldo").ToString()) < cantidad) Then
+                Validar = False
+            End If
+        End While
+        dr.Close()
+        Return Validar
+
+    End Function
+
+
+
+
+    Public Function RealizarMovimiento(NombreMov As String, CantidadRetirada As Integer)
+
+        Dim TipoMov As String = ""
+        If (ValidarRetiro(CantidadRetirada) = True) Then
+
+            Dim idultimo As Integer = 0
+            cmd = New SqlCommand("Select * from Movimientos order by IdMovimientos desc", cn)
+            dr = cmd.ExecuteReader()
+            dr.Read()
+
+            idultimo = Convert.ToInt32(dr(0))
+
+            dr.Close()
+            idultimo = idultimo + 1
+
+
+
+            cmd = New SqlCommand("Insert Into Movimientos(IdMovimientos,TipoMovimiento,Tarjeta,CantidadMovimiento) values (" + idultimo + ",'" + NombreMov + "','" + Tarjeta + "'," + CantidadRetirada + ")", cn)
+            cmd.ExecuteNonQuery()
+            RestarSaldo(CantidadRetirada)
+            If (NombreMov = "Retiro") Then
+
+                TipoMov = "Retiro realizado correctamente"
+
+            ElseIf (NombreMov = "Pago") Then
+
+                TipoMov = "El pago se realizado correctamente"
+
+            ElseIf (NombreMov = "Recarga") Then
+
+                TipoMov = "La recarga se realizado correctamente"
+            End If
+
+        Else
+
+            TipoMov = "No cuenta con el saldo suficiente"
+        End If
+        Return TipoMov
+
+    End Function
+
+    Public Sub RestarSaldo(Cantidad As Integer)
+
+
+        Dim SaldoNuevo As Integer = 0
+
+        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta = '" + Tarjeta + "'", cn)
+        dr = cmd.ExecuteReader()
+        While (dr.Read())
+            SaldoNuevo = Convert.ToInt32(dr("Saldo").ToString()) - Cantidad
+        End While
+        dr.Close()
+
+        cmd = New SqlCommand("update Usuarios set Saldo=@Saldo where Numero_tarjeta = '" + Tarjeta + "'", cn)
+        cmd.Parameters.AddWithValue("Saldo", SaldoNuevo)
+        cmd.ExecuteNonQuery()
+
+
+
+    End Sub
 End Class
 
 
