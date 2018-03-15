@@ -138,7 +138,7 @@ Public Class Conexion
 
 
 
-    Public Function RealizarMovimiento(NombreMov As String, CantidadRetirada As Integer)
+    Public Function RealizarMovimiento(NombreMov As String, CantidadRetirada As Integer, movimiento As String)
 
         Dim TipoMov As String = ""
         If (ValidarRetiro(CantidadRetirada) = True) Then
@@ -158,15 +158,15 @@ Public Class Conexion
             cmd = New SqlCommand("Insert Into Movimientos(IdMovimientos,TipoMovimiento,Tarjeta,CantidadMovimiento) values (" & idultimo & ",'" & NombreMov & "','" & Tarjeta & "'," & CantidadRetirada & ")", cn)
             cmd.ExecuteNonQuery()
             RestarSaldo(CantidadRetirada)
-            If (NombreMov = "Retiro") Then
+            If (movimiento = "Retiro") Then
 
                 TipoMov = "Retiro realizado correctamente"
 
-            ElseIf (NombreMov = "Pago") Then
+            ElseIf (movimiento = "Pago") Then
 
                 TipoMov = "El pago se realizado correctamente"
 
-            ElseIf (NombreMov = "Recarga") Then
+            ElseIf (movimiento = "Recarga") Then
 
                 TipoMov = "La recarga se realizado correctamente"
             End If

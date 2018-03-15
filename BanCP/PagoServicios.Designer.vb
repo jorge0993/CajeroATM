@@ -161,6 +161,7 @@ Partial Class PagoServicios
         '
         'btPagar
         '
+        Me.btPagar.Enabled = False
         Me.btPagar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btPagar.Location = New System.Drawing.Point(310, 256)
         Me.btPagar.Name = "btPagar"

@@ -29,4 +29,9 @@
         Me.Hide()
         PagosMenu.Show()
     End Sub
+
+    Private Sub btSalir_Click(sender As Object, e As EventArgs) Handles btSalir.Click
+        Me.Hide()
+        Inicio.Show()
+    End Sub
 End Class

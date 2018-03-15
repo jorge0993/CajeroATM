@@ -63,7 +63,7 @@ Partial Class PagosMenu
         'btServicios
         '
         Me.btServicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btServicios.Location = New System.Drawing.Point(111, 150)
+        Me.btServicios.Location = New System.Drawing.Point(109, 150)
         Me.btServicios.Name = "btServicios"
         Me.btServicios.Size = New System.Drawing.Size(182, 59)
         Me.btServicios.TabIndex = 15
