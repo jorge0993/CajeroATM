@@ -48,7 +48,7 @@ Partial Class Inicio
         '
         Me.pictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox6.Image = Global.BanCP.My.Resources.Resources.rightarrow22_6843
-        Me.pictureBox6.Location = New System.Drawing.Point(660, 230)
+        Me.pictureBox6.Location = New System.Drawing.Point(766, 432)
         Me.pictureBox6.Name = "pictureBox6"
         Me.pictureBox6.Size = New System.Drawing.Size(49, 46)
         Me.pictureBox6.TabIndex = 21
@@ -58,7 +58,7 @@ Partial Class Inicio
         '
         Me.pictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox5.Image = Global.BanCP.My.Resources.Resources.Tarjeta_de_Credito
-        Me.pictureBox5.Location = New System.Drawing.Point(357, 163)
+        Me.pictureBox5.Location = New System.Drawing.Point(463, 365)
         Me.pictureBox5.Name = "pictureBox5"
         Me.pictureBox5.Size = New System.Drawing.Size(288, 174)
         Me.pictureBox5.TabIndex = 20
@@ -68,7 +68,7 @@ Partial Class Inicio
         '
         Me.pictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox4.Image = Global.BanCP.My.Resources.Resources.Ingresar
-        Me.pictureBox4.Location = New System.Drawing.Point(376, 14)
+        Me.pictureBox4.Location = New System.Drawing.Point(482, 216)
         Me.pictureBox4.Name = "pictureBox4"
         Me.pictureBox4.Size = New System.Drawing.Size(237, 143)
         Me.pictureBox4.TabIndex = 19
@@ -107,8 +107,8 @@ Partial Class Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
-        Me.ClientSize = New System.Drawing.Size(732, 362)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(825, 551)
         Me.Controls.Add(Me.pictureBox6)
         Me.Controls.Add(Me.pictureBox5)
         Me.Controls.Add(Me.pictureBox4)
