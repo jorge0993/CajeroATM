@@ -7,7 +7,8 @@ Public Class Inicio
 
     Private Sub tbTarjeta_TextChanged(sender As Object, e As EventArgs) Handles tbTarjeta.TextChanged
         If (tbTarjeta.Text.Length = 11) Then
-            If (obj.VerificarUsuario(tbTarjeta.Text.Trim) = 0) Then
+            Tipo = obj.VerificarUsuario(tbTarjeta.Text.Trim)
+            If (Tipo = -1) Then
                 MessageBox.Show("Esta tarjeta no se encuentra dentro del sistema", "Verificar tarjeta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 tbTarjeta.Text = ""
             Else

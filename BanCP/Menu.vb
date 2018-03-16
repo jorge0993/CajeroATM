@@ -34,4 +34,13 @@
         Me.Hide()
         Inicio.Show()
     End Sub
+
+    Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Tipo = 0 Then
+            btUsuarios.Visible = True
+        Else
+            btUsuarios.Visible = False
+
+        End If
+    End Sub
 End Class
