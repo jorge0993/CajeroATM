@@ -358,44 +358,5 @@
   <ItemGroup>
     <None Include="Resources\telcel-logo-mexico.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bancp15.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tarjeta de Credito22.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\flecha12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bancplogo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minibancp2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnRetiros2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnSaldo2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnMovimientos5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnPagos2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnCambiarPIN3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnSalir2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnAtras3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnPagar2.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
