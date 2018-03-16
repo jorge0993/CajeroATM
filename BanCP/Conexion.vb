@@ -106,18 +106,19 @@ Public Class Conexion
     End Function
 
     Public Function VerificarUsuario(Tarjeta As String)
-        Dim contador As Integer = 0
+        Dim tipo As Integer = -1
         Try
             cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" & Tarjeta & "'", cn)
             dr = cmd.ExecuteReader()
-            While (dr.Read())
-                contador += 1
-            End While
+            If (dr.Read()) Then
+
+                tipo = dr("TipoUsuario")
+            End If
         Catch ex As Exception
             MessageBox.Show("No se llevo a cabo la consulta " + ex.ToString())
         End Try
         cn.Close()
-        Return contador
+        Return tipo
 
     End Function
 
@@ -250,7 +251,21 @@ Public Class Conexion
         dr.Close()
         Return Resultado
     End Function
+    Public Sub mostrarMovimientos(dg As DataGridView)
+        Dim sql As String = "Select Tarjeta,TipoMovimiento,CantidadMovimiento from Movimientos where Tarjeta=" & Tarjeta
+        Dim cmd As New SqlCommand(sql, cn)
 
+        Try
+            Dim da As New SqlDataAdapter(cmd)
+            Dim ds As New DataSet
+
+            da.Fill(ds, "Movimientos")
+
+            dg.DataSource = ds.Tables("Movimientos")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class
 
 
