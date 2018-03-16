@@ -22,7 +22,7 @@ Partial Class Retiros
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Retiros))
         Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btAtras = New System.Windows.Forms.Button()
         Me.bt2000 = New System.Windows.Forms.Button()
@@ -31,109 +31,109 @@ Partial Class Retiros
         Me.bt500 = New System.Windows.Forms.Button()
         Me.bt200 = New System.Windows.Forms.Button()
         Me.bt50 = New System.Windows.Forms.Button()
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pictureBox1
-        '
-        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox1.Image = Global.BanCP.My.Resources.Resources.retiros
-        Me.pictureBox1.Location = New System.Drawing.Point(245, 189)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(219, 87)
-        Me.pictureBox1.TabIndex = 24
-        Me.pictureBox1.TabStop = False
         '
         'pictureBox2
         '
         Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.Logo
-        Me.pictureBox2.Location = New System.Drawing.Point(221, 28)
+        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.bancp1
+        Me.pictureBox2.Location = New System.Drawing.Point(248, 146)
         Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(271, 93)
+        Me.pictureBox2.Size = New System.Drawing.Size(331, 331)
+        Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.pictureBox2.TabIndex = 23
         Me.pictureBox2.TabStop = False
         '
         'btAtras
         '
         Me.btAtras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btAtras.Location = New System.Drawing.Point(61, 328)
+        Me.btAtras.Location = New System.Drawing.Point(39, 595)
         Me.btAtras.Name = "btAtras"
-        Me.btAtras.Size = New System.Drawing.Size(104, 36)
+        Me.btAtras.Size = New System.Drawing.Size(131, 36)
         Me.btAtras.TabIndex = 22
         Me.btAtras.Text = "Atras"
-        Me.btAtras.UseVisualStyleBackColor = True
+        Me.btAtras.UseVisualStyleBackColor = False
         '
         'bt2000
         '
         Me.bt2000.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt2000.Location = New System.Drawing.Point(497, 203)
+        Me.bt2000.Location = New System.Drawing.Point(658, 416)
         Me.bt2000.Name = "bt2000"
         Me.bt2000.Size = New System.Drawing.Size(131, 42)
         Me.bt2000.TabIndex = 21
         Me.bt2000.Text = "2000"
-        Me.bt2000.UseVisualStyleBackColor = True
+        Me.bt2000.UseVisualStyleBackColor = False
         '
         'btOtra
         '
         Me.btOtra.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btOtra.Location = New System.Drawing.Point(497, 268)
+        Me.btOtra.Location = New System.Drawing.Point(658, 503)
         Me.btOtra.Name = "btOtra"
         Me.btOtra.Size = New System.Drawing.Size(131, 42)
         Me.btOtra.TabIndex = 20
         Me.btOtra.Text = "Otra Cantidad.."
-        Me.btOtra.UseVisualStyleBackColor = True
+        Me.btOtra.UseVisualStyleBackColor = False
         '
         'bt1000
         '
         Me.bt1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt1000.Location = New System.Drawing.Point(497, 139)
+        Me.bt1000.Location = New System.Drawing.Point(658, 328)
         Me.bt1000.Name = "bt1000"
         Me.bt1000.Size = New System.Drawing.Size(131, 44)
         Me.bt1000.TabIndex = 19
         Me.bt1000.Text = "1000"
-        Me.bt1000.UseVisualStyleBackColor = True
+        Me.bt1000.UseVisualStyleBackColor = False
         '
         'bt500
         '
         Me.bt500.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt500.Location = New System.Drawing.Point(82, 270)
+        Me.bt500.Location = New System.Drawing.Point(39, 503)
         Me.bt500.Name = "bt500"
         Me.bt500.Size = New System.Drawing.Size(131, 42)
         Me.bt500.TabIndex = 18
         Me.bt500.Text = "500"
-        Me.bt500.UseVisualStyleBackColor = True
+        Me.bt500.UseVisualStyleBackColor = False
         '
         'bt200
         '
         Me.bt200.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt200.Location = New System.Drawing.Point(82, 205)
+        Me.bt200.Location = New System.Drawing.Point(39, 416)
         Me.bt200.Name = "bt200"
         Me.bt200.Size = New System.Drawing.Size(131, 43)
         Me.bt200.TabIndex = 17
         Me.bt200.Text = "200"
-        Me.bt200.UseVisualStyleBackColor = True
+        Me.bt200.UseVisualStyleBackColor = False
         '
         'bt50
         '
         Me.bt50.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt50.Location = New System.Drawing.Point(82, 141)
+        Me.bt50.Location = New System.Drawing.Point(39, 328)
         Me.bt50.Name = "bt50"
         Me.bt50.Size = New System.Drawing.Size(131, 42)
         Me.bt50.TabIndex = 16
         Me.bt50.Text = "50"
-        Me.bt50.UseVisualStyleBackColor = True
+        Me.bt50.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Bentham", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(323, 47)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(169, 53)
+        Me.Label4.TabIndex = 39
+        Me.Label4.Text = "Retiros"
         '
         'Retiros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
-        Me.ClientSize = New System.Drawing.Size(678, 390)
-        Me.Controls.Add(Me.pictureBox1)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(841, 659)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.pictureBox2)
         Me.Controls.Add(Me.btAtras)
         Me.Controls.Add(Me.bt2000)
@@ -142,15 +142,15 @@ Partial Class Retiros
         Me.Controls.Add(Me.bt500)
         Me.Controls.Add(Me.bt200)
         Me.Controls.Add(Me.bt50)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Retiros"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Retiros"
-        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Private WithEvents pictureBox1 As PictureBox
     Private WithEvents pictureBox2 As PictureBox
     Private WithEvents btAtras As Button
     Private WithEvents bt2000 As Button
@@ -159,4 +159,5 @@ Partial Class Retiros
     Private WithEvents bt500 As Button
     Private WithEvents bt200 As Button
     Private WithEvents bt50 As Button
+    Friend WithEvents Label4 As Label
 End Class
