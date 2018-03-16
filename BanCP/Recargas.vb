@@ -46,8 +46,4 @@
         rdMovistar.Checked = False
         rdTelcel.Checked = False
     End Sub
-
-    Private Sub Recargas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

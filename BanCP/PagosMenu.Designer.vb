@@ -22,7 +22,6 @@ Partial Class PagosMenu
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PagosMenu))
         Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btAtras = New System.Windows.Forms.Button()
         Me.btRecarga = New System.Windows.Forms.Button()
@@ -34,11 +33,10 @@ Partial Class PagosMenu
         '
         Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.minibancp
-        Me.pictureBox2.Location = New System.Drawing.Point(242, 3)
+        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.Logo
+        Me.pictureBox2.Location = New System.Drawing.Point(200, 21)
         Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(169, 141)
-        Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pictureBox2.Size = New System.Drawing.Size(271, 93)
         Me.pictureBox2.TabIndex = 18
         Me.pictureBox2.TabStop = False
         '
@@ -50,41 +48,39 @@ Partial Class PagosMenu
         Me.btAtras.Size = New System.Drawing.Size(116, 38)
         Me.btAtras.TabIndex = 17
         Me.btAtras.Text = "Atras"
-        Me.btAtras.UseVisualStyleBackColor = False
+        Me.btAtras.UseVisualStyleBackColor = True
         '
         'btRecarga
         '
         Me.btRecarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btRecarga.Location = New System.Drawing.Point(367, 175)
+        Me.btRecarga.Location = New System.Drawing.Point(364, 150)
         Me.btRecarga.Name = "btRecarga"
         Me.btRecarga.Size = New System.Drawing.Size(182, 59)
         Me.btRecarga.TabIndex = 16
         Me.btRecarga.Text = "Recargas"
-        Me.btRecarga.UseVisualStyleBackColor = False
+        Me.btRecarga.UseVisualStyleBackColor = True
         '
         'btServicios
         '
         Me.btServicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btServicios.Location = New System.Drawing.Point(119, 175)
+        Me.btServicios.Location = New System.Drawing.Point(109, 150)
         Me.btServicios.Name = "btServicios"
         Me.btServicios.Size = New System.Drawing.Size(182, 59)
         Me.btServicios.TabIndex = 15
         Me.btServicios.Text = "Servicios"
-        Me.btServicios.UseVisualStyleBackColor = False
+        Me.btServicios.UseVisualStyleBackColor = True
         '
         'PagosMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
         Me.ClientSize = New System.Drawing.Size(656, 333)
         Me.Controls.Add(Me.pictureBox2)
         Me.Controls.Add(Me.btAtras)
         Me.Controls.Add(Me.btRecarga)
         Me.Controls.Add(Me.btServicios)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PagosMenu"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PagosMenu"
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

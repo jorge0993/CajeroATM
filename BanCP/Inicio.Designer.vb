@@ -22,41 +22,33 @@ Partial Class Inicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicio))
         Me.tbTarjeta = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.pictureBox6 = New System.Windows.Forms.PictureBox()
         Me.pictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.pictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.pictureBox3 = New System.Windows.Forms.PictureBox()
         Me.pictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbTarjeta
         '
-        Me.tbTarjeta.Location = New System.Drawing.Point(332, 373)
+        Me.tbTarjeta.Location = New System.Drawing.Point(107, 296)
         Me.tbTarjeta.Name = "tbTarjeta"
         Me.tbTarjeta.Size = New System.Drawing.Size(130, 20)
         Me.tbTarjeta.TabIndex = 15
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bentham", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(212, 321)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(415, 39)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "Ingrese su tarjeta por favor"
-        '
         'pictureBox6
         '
         Me.pictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox6.Image = Global.BanCP.My.Resources.Resources.flecha1
-        Me.pictureBox6.Location = New System.Drawing.Point(780, 601)
+        Me.pictureBox6.Image = Global.BanCP.My.Resources.Resources.rightarrow22_6843
+        Me.pictureBox6.Location = New System.Drawing.Point(766, 432)
         Me.pictureBox6.Name = "pictureBox6"
         Me.pictureBox6.Size = New System.Drawing.Size(49, 46)
         Me.pictureBox6.TabIndex = 21
@@ -65,51 +57,73 @@ Partial Class Inicio
         'pictureBox5
         '
         Me.pictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox5.Image = Global.BanCP.My.Resources.Resources.Tarjeta_de_Credito2
-        Me.pictureBox5.Location = New System.Drawing.Point(265, 427)
+        Me.pictureBox5.Image = Global.BanCP.My.Resources.Resources.Tarjeta_de_Credito
+        Me.pictureBox5.Location = New System.Drawing.Point(463, 365)
         Me.pictureBox5.Name = "pictureBox5"
         Me.pictureBox5.Size = New System.Drawing.Size(288, 174)
         Me.pictureBox5.TabIndex = 20
         Me.pictureBox5.TabStop = False
         '
+        'pictureBox4
+        '
+        Me.pictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.pictureBox4.Image = Global.BanCP.My.Resources.Resources.Ingresar
+        Me.pictureBox4.Location = New System.Drawing.Point(482, 216)
+        Me.pictureBox4.Name = "pictureBox4"
+        Me.pictureBox4.Size = New System.Drawing.Size(237, 143)
+        Me.pictureBox4.TabIndex = 19
+        Me.pictureBox4.TabStop = False
+        '
+        'pictureBox3
+        '
+        Me.pictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.pictureBox3.Image = Global.BanCP.My.Resources.Resources.cooltext215208151250778
+        Me.pictureBox3.Location = New System.Drawing.Point(13, 49)
+        Me.pictureBox3.Name = "pictureBox3"
+        Me.pictureBox3.Size = New System.Drawing.Size(328, 143)
+        Me.pictureBox3.TabIndex = 18
+        Me.pictureBox3.TabStop = False
+        '
         'pictureBox2
         '
         Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.comprar_online_con_seguridad
-        Me.pictureBox2.Location = New System.Drawing.Point(24, 614)
+        Me.pictureBox2.Location = New System.Drawing.Point(0, 330)
         Me.pictureBox2.Name = "pictureBox2"
         Me.pictureBox2.Size = New System.Drawing.Size(99, 33)
         Me.pictureBox2.TabIndex = 17
         Me.pictureBox2.TabStop = False
         '
-        'PictureBox1
+        'pictureBox1
         '
-        Me.PictureBox1.Image = Global.BanCP.My.Resources.Resources.bancp1
-        Me.PictureBox1.Location = New System.Drawing.Point(234, -20)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(375, 369)
-        Me.PictureBox1.TabIndex = 23
-        Me.PictureBox1.TabStop = False
+        Me.pictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.pictureBox1.Image = Global.BanCP.My.Resources.Resources.cooltext215208679285420
+        Me.pictureBox1.Location = New System.Drawing.Point(62, 198)
+        Me.pictureBox1.Name = "pictureBox1"
+        Me.pictureBox1.Size = New System.Drawing.Size(257, 92)
+        Me.pictureBox1.TabIndex = 16
+        Me.pictureBox1.TabStop = False
         '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(841, 659)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(825, 551)
         Me.Controls.Add(Me.pictureBox6)
         Me.Controls.Add(Me.pictureBox5)
+        Me.Controls.Add(Me.pictureBox4)
+        Me.Controls.Add(Me.pictureBox3)
         Me.Controls.Add(Me.pictureBox2)
+        Me.Controls.Add(Me.pictureBox1)
         Me.Controls.Add(Me.tbTarjeta)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Inicio"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -117,8 +131,9 @@ Partial Class Inicio
 
     Private WithEvents pictureBox6 As PictureBox
     Private WithEvents pictureBox5 As PictureBox
+    Private WithEvents pictureBox4 As PictureBox
+    Private WithEvents pictureBox3 As PictureBox
     Private WithEvents pictureBox2 As PictureBox
+    Private WithEvents pictureBox1 As PictureBox
     Private WithEvents tbTarjeta As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
 End Class

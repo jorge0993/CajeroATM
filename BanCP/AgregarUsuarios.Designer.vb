@@ -22,7 +22,6 @@ Partial Class AgregarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AgregarUsuarios))
         Me.btRegresar = New System.Windows.Forms.Button()
         Me.dgUsuarios = New System.Windows.Forms.DataGridView()
         Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,29 +41,42 @@ Partial Class AgregarUsuarios
         Me.txtNumero = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.CBusu = New System.Windows.Forms.ComboBox()
+        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.btEliminar = New System.Windows.Forms.Button()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.btModificar = New System.Windows.Forms.Button()
         Me.btLimpiar = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btRegresar
         '
-        Me.btRegresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btRegresar.Location = New System.Drawing.Point(12, 409)
+        Me.btRegresar.Location = New System.Drawing.Point(893, 404)
         Me.btRegresar.Name = "btRegresar"
-        Me.btRegresar.Size = New System.Drawing.Size(108, 35)
+        Me.btRegresar.Size = New System.Drawing.Size(75, 23)
         Me.btRegresar.TabIndex = 45
         Me.btRegresar.Text = "Regresar"
-        Me.btRegresar.UseVisualStyleBackColor = False
+        Me.btRegresar.UseVisualStyleBackColor = True
         '
         'dgUsuarios
         '
@@ -153,12 +165,12 @@ Partial Class AgregarUsuarios
         'btAgregar
         '
         Me.btAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btAgregar.Location = New System.Drawing.Point(322, 409)
+        Me.btAgregar.Location = New System.Drawing.Point(22, 409)
         Me.btAgregar.Name = "btAgregar"
         Me.btAgregar.Size = New System.Drawing.Size(109, 35)
         Me.btAgregar.TabIndex = 41
         Me.btAgregar.Text = "Agregar"
-        Me.btAgregar.UseVisualStyleBackColor = False
+        Me.btAgregar.UseVisualStyleBackColor = True
         '
         'txtDireccion
         '
@@ -205,60 +217,63 @@ Partial Class AgregarUsuarios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bentham", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(62, 102)
+        Me.Label1.Location = New System.Drawing.Point(120, 112)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(161, 21)
+        Me.Label1.Size = New System.Drawing.Size(98, 13)
         Me.Label1.TabIndex = 46
         Me.Label1.Text = "Numero de Tarjeta:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Bentham", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(178, 146)
+        Me.Label2.Location = New System.Drawing.Point(190, 156)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 21)
+        Me.Label2.Size = New System.Drawing.Size(28, 13)
         Me.Label2.TabIndex = 47
         Me.Label2.Text = "PIN:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(181, 154)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.TabIndex = 48
+        Me.Label3.Text = "Saldo:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Bentham", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(145, 188)
+        Me.Label4.Location = New System.Drawing.Point(171, 198)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 21)
+        Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 49
-        Me.Label4.Text = "Nombre:"
+        Me.Label4.Text = "Nombres:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Bentham", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(138, 231)
+        Me.Label5.Location = New System.Drawing.Point(166, 241)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(80, 21)
+        Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 50
-        Me.Label5.Text = "Apellido:"
+        Me.Label5.Text = "Apellidos:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Bentham", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(127, 272)
+        Me.Label6.Location = New System.Drawing.Point(163, 292)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(91, 21)
+        Me.Label6.Size = New System.Drawing.Size(55, 13)
         Me.Label6.TabIndex = 51
         Me.Label6.Text = "Dirección:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Bentham", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(79, 320)
+        Me.Label7.Location = New System.Drawing.Point(138, 329)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(139, 21)
+        Me.Label7.Size = New System.Drawing.Size(85, 13)
         Me.Label7.TabIndex = 52
         Me.Label7.Text = "Tipo de Usuario:"
         '
@@ -273,75 +288,148 @@ Partial Class AgregarUsuarios
         Me.CBusu.Size = New System.Drawing.Size(146, 21)
         Me.CBusu.TabIndex = 53
         '
+        'pictureBox2
+        '
+        Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.Logo
+        Me.pictureBox2.Location = New System.Drawing.Point(671, 12)
+        Me.pictureBox2.Name = "pictureBox2"
+        Me.pictureBox2.Size = New System.Drawing.Size(271, 93)
+        Me.pictureBox2.TabIndex = 54
+        Me.pictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Image = Global.BanCP.My.Resources.Resources.cooltext215312682298178
+        Me.PictureBox1.Location = New System.Drawing.Point(94, 269)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(134, 43)
+        Me.PictureBox1.TabIndex = 55
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox3.Image = Global.BanCP.My.Resources.Resources.cooltext215311768361331
+        Me.PictureBox3.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(531, 64)
+        Me.PictureBox3.TabIndex = 56
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox4.Image = Global.BanCP.My.Resources.Resources.numTarjeta
+        Me.PictureBox4.Location = New System.Drawing.Point(22, 82)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(206, 43)
+        Me.PictureBox4.TabIndex = 57
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox5.Image = Global.BanCP.My.Resources.Resources.PIN
+        Me.PictureBox5.Location = New System.Drawing.Point(159, 131)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(69, 43)
+        Me.PictureBox5.TabIndex = 58
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox6.Image = Global.BanCP.My.Resources.Resources.Apellido
+        Me.PictureBox6.Location = New System.Drawing.Point(104, 228)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(124, 43)
+        Me.PictureBox6.TabIndex = 59
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox7.Image = Global.BanCP.My.Resources.Resources.nombre
+        Me.PictureBox7.Location = New System.Drawing.Point(109, 185)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(119, 43)
+        Me.PictureBox7.TabIndex = 60
+        Me.PictureBox7.TabStop = False
+        '
         'btEliminar
         '
         Me.btEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btEliminar.Location = New System.Drawing.Point(466, 409)
+        Me.btEliminar.Location = New System.Drawing.Point(166, 409)
         Me.btEliminar.Name = "btEliminar"
         Me.btEliminar.Size = New System.Drawing.Size(109, 35)
         Me.btEliminar.TabIndex = 61
         Me.btEliminar.Text = "Eliminar"
-        Me.btEliminar.UseVisualStyleBackColor = False
+        Me.btEliminar.UseVisualStyleBackColor = True
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox9.Image = Global.BanCP.My.Resources.Resources.TipoUser
+        Me.PictureBox9.Location = New System.Drawing.Point(-5, 308)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(233, 43)
+        Me.PictureBox9.TabIndex = 63
+        Me.PictureBox9.TabStop = False
         '
         'btModificar
         '
         Me.btModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btModificar.Location = New System.Drawing.Point(610, 409)
+        Me.btModificar.Location = New System.Drawing.Point(310, 409)
         Me.btModificar.Name = "btModificar"
         Me.btModificar.Size = New System.Drawing.Size(109, 35)
         Me.btModificar.TabIndex = 64
         Me.btModificar.Text = "Modificar"
-        Me.btModificar.UseVisualStyleBackColor = False
+        Me.btModificar.UseVisualStyleBackColor = True
         Me.btModificar.Visible = False
         '
         'btLimpiar
         '
         Me.btLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btLimpiar.Location = New System.Drawing.Point(850, 409)
+        Me.btLimpiar.Location = New System.Drawing.Point(550, 409)
         Me.btLimpiar.Name = "btLimpiar"
         Me.btLimpiar.Size = New System.Drawing.Size(133, 35)
         Me.btLimpiar.TabIndex = 65
         Me.btLimpiar.Text = "Limpiar campos"
-        Me.btLimpiar.UseVisualStyleBackColor = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Benne Text", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(124, 39)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(225, 41)
-        Me.Label3.TabIndex = 66
-        Me.Label3.Text = "Agregar usuarios"
-        '
-        'pictureBox2
-        '
-        Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.bancplogo
-        Me.pictureBox2.Location = New System.Drawing.Point(671, 12)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(271, 93)
-        Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.pictureBox2.TabIndex = 54
-        Me.pictureBox2.TabStop = False
+        Me.btLimpiar.UseVisualStyleBackColor = True
         '
         'AgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
         Me.ClientSize = New System.Drawing.Size(1005, 456)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btLimpiar)
         Me.Controls.Add(Me.btModificar)
+        Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.btEliminar)
+        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pictureBox2)
         Me.Controls.Add(Me.CBusu)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btRegresar)
@@ -353,12 +441,17 @@ Partial Class AgregarUsuarios
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtPIN)
         Me.Controls.Add(Me.txtNumero)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AgregarUsuarios"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AgregarUsuarios"
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -374,13 +467,21 @@ Partial Class AgregarUsuarios
     Private WithEvents txtNumero As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents CBusu As ComboBox
     Private WithEvents pictureBox2 As PictureBox
+    Private WithEvents PictureBox1 As PictureBox
+    Private WithEvents PictureBox3 As PictureBox
+    Private WithEvents PictureBox4 As PictureBox
+    Private WithEvents PictureBox5 As PictureBox
+    Private WithEvents PictureBox6 As PictureBox
+    Private WithEvents PictureBox7 As PictureBox
     Private WithEvents btEliminar As Button
+    Private WithEvents PictureBox9 As PictureBox
     Private WithEvents btModificar As Button
     Friend WithEvents Numero_tarjeta As DataGridViewTextBoxColumn
     Friend WithEvents Nombres As DataGridViewTextBoxColumn
@@ -391,5 +492,4 @@ Partial Class AgregarUsuarios
     Friend WithEvents Saldo As DataGridViewTextBoxColumn
     Friend WithEvents FechaAlta As DataGridViewTextBoxColumn
     Private WithEvents btLimpiar As Button
-    Friend WithEvents Label3 As Label
 End Class
