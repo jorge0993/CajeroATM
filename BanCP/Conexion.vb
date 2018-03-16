@@ -96,7 +96,7 @@ Public Class Conexion
 
     Public Function ConsultarSaldo()
         Dim SaldoDisponible As String = ""
-        cmd = New SqlCommand("Select Saldo from Usuarios where Numero_tarjeta='" + Tarjeta + "'", cn)
+        cmd = New SqlCommand("Select Saldo from Usuarios where Numero_tarjeta='" & Tarjeta & "'", cn)
         dr = cmd.ExecuteReader()
         While (dr.Read())
             SaldoDisponible = dr("Saldo").ToString()
@@ -108,7 +108,7 @@ Public Class Conexion
     Public Function VerificarUsuario(Tarjeta As String)
         Dim contador As Integer = 0
         Try
-            cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" + Tarjeta + "'", cn)
+            cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" & Tarjeta & "'", cn)
             dr = cmd.ExecuteReader()
             While (dr.Read())
                 contador += 1
@@ -123,7 +123,7 @@ Public Class Conexion
 
     Public Function ValidarRetiro(cantidad As Integer)
         Dim Validar As Boolean = True
-        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" + Tarjeta + "'", cn)
+        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" & Tarjeta & "'", cn)
         dr = cmd.ExecuteReader()
         While (dr.Read())
             If (Convert.ToInt32(dr("Saldo").ToString()) < cantidad) Then
@@ -138,7 +138,7 @@ Public Class Conexion
 
 
 
-    Public Function RealizarMovimiento(NombreMov As String, CantidadRetirada As Integer)
+    Public Function RealizarMovimiento(NombreMov As String, CantidadRetirada As Integer, movimiento As String)
 
         Dim TipoMov As String = ""
         If (ValidarRetiro(CantidadRetirada) = True) Then
@@ -155,18 +155,18 @@ Public Class Conexion
 
 
 
-            cmd = New SqlCommand("Insert Into Movimientos(IdMovimientos,TipoMovimiento,Tarjeta,CantidadMovimiento) values (" + idultimo + ",'" + NombreMov + "','" + Tarjeta + "'," + CantidadRetirada + ")", cn)
+            cmd = New SqlCommand("Insert Into Movimientos(IdMovimientos,TipoMovimiento,Tarjeta,CantidadMovimiento) values (" & idultimo & ",'" & NombreMov & "','" & Tarjeta & "'," & CantidadRetirada & ")", cn)
             cmd.ExecuteNonQuery()
             RestarSaldo(CantidadRetirada)
-            If (NombreMov = "Retiro") Then
+            If (movimiento = "Retiro") Then
 
                 TipoMov = "Retiro realizado correctamente"
 
-            ElseIf (NombreMov = "Pago") Then
+            ElseIf (movimiento = "Pago") Then
 
                 TipoMov = "El pago se realizado correctamente"
 
-            ElseIf (NombreMov = "Recarga") Then
+            ElseIf (movimiento = "Recarga") Then
 
                 TipoMov = "La recarga se realizado correctamente"
             End If
@@ -182,14 +182,14 @@ Public Class Conexion
     Public Sub RestarSaldo(Cantidad As Integer)
         Dim SaldoNuevo As Integer = 0
 
-        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta = '" + Tarjeta + "'", cn)
+        cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta = '" & Tarjeta & "'", cn)
         dr = cmd.ExecuteReader()
         While (dr.Read())
             SaldoNuevo = Convert.ToInt32(dr("Saldo").ToString()) - Cantidad
         End While
         dr.Close()
 
-        cmd = New SqlCommand("update Usuarios set Saldo=@Saldo where Numero_tarjeta = '" + Tarjeta + "'", cn)
+        cmd = New SqlCommand("update Usuarios set Saldo=@Saldo where Numero_tarjeta = '" & Tarjeta & "'", cn)
         cmd.Parameters.AddWithValue("Saldo", SaldoNuevo)
         cmd.ExecuteNonQuery()
     End Sub
@@ -210,10 +210,47 @@ Public Class Conexion
         Catch ex As Exception
             MessageBox.Show(("No se llevo a cabo la consulta " + ex.ToString))
         End Try
-
         cn.Close()
         Return contador
     End Function
+
+    Public Function ValidarPIN(ActualPIN As Integer)
+        Dim usuario As Boolean = False
+        Try
+            cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta='" & Tarjeta & "' and PIN= " & ActualPIN, cn)
+            dr = cmd.ExecuteReader()
+            If (dr.Read()) Then
+                usuario = True
+            Else
+                usuario = False
+            End If
+            dr.Close()
+        Catch ex As Exception
+            MessageBox.Show("Fue imposible ingresar al sistema " + ex.ToString())
+        End Try
+        Return usuario
+
+    End Function
+
+    Public Function CambiarPIN(NuevoPIN As Integer, confirmar As Boolean)
+
+        Dim Resultado As String = "El PIN fue cambiado con exito"
+        Try
+            If (confirmar = True) Then
+                cmd = New SqlCommand("update Usuarios set PIN = " & NuevoPIN & " where Numero_tarjeta = '" & Tarjeta & "'", cn)
+                cmd.ExecuteNonQuery()
+            Else
+                Resultado = "Contraseña actual incorrecta"
+            End If
+
+        Catch ex As Exception
+
+            Resultado = "Ha ucurrido un error " + ex.ToString()
+        End Try
+        dr.Close()
+        Return Resultado
+    End Function
+
 End Class
 
 
