@@ -11,4 +11,8 @@
     Private Sub Saldo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lbSaldo.Text = con.ConsultarSaldo()
     End Sub
+
+    Private Sub pictureBox2_Click(sender As Object, e As EventArgs) Handles pictureBox2.Click
+
+    End Sub
 End Class

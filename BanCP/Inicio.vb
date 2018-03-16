@@ -11,6 +11,7 @@ Public Class Inicio
             If (Tipo = -1) Then
                 MessageBox.Show("Esta tarjeta no se encuentra dentro del sistema", "Verificar tarjeta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 tbTarjeta.Text = ""
+                tbTarjeta.Focus()
             Else
                 Dim loginPin = New LoginPIN()
                 loginPin.Show()

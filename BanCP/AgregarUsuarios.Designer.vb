@@ -22,6 +22,7 @@ Partial Class AgregarUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AgregarUsuarios))
         Me.btRegresar = New System.Windows.Forms.Button()
         Me.dgUsuarios = New System.Windows.Forms.DataGridView()
         Me.Numero_tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -71,9 +72,9 @@ Partial Class AgregarUsuarios
         '
         'btRegresar
         '
-        Me.btRegresar.Location = New System.Drawing.Point(893, 404)
+        Me.btRegresar.Location = New System.Drawing.Point(12, 411)
         Me.btRegresar.Name = "btRegresar"
-        Me.btRegresar.Size = New System.Drawing.Size(75, 23)
+        Me.btRegresar.Size = New System.Drawing.Size(133, 35)
         Me.btRegresar.TabIndex = 45
         Me.btRegresar.Text = "Regresar"
         Me.btRegresar.UseVisualStyleBackColor = True
@@ -165,12 +166,12 @@ Partial Class AgregarUsuarios
         'btAgregar
         '
         Me.btAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btAgregar.Location = New System.Drawing.Point(22, 409)
+        Me.btAgregar.Location = New System.Drawing.Point(322, 410)
         Me.btAgregar.Name = "btAgregar"
         Me.btAgregar.Size = New System.Drawing.Size(109, 35)
         Me.btAgregar.TabIndex = 41
         Me.btAgregar.Text = "Agregar"
-        Me.btAgregar.UseVisualStyleBackColor = True
+        Me.btAgregar.UseVisualStyleBackColor = False
         '
         'txtDireccion
         '
@@ -292,10 +293,11 @@ Partial Class AgregarUsuarios
         '
         Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.Logo
+        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.bancplogo
         Me.pictureBox2.Location = New System.Drawing.Point(671, 12)
         Me.pictureBox2.Name = "pictureBox2"
         Me.pictureBox2.Size = New System.Drawing.Size(271, 93)
+        Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.pictureBox2.TabIndex = 54
         Me.pictureBox2.TabStop = False
         '
@@ -368,12 +370,12 @@ Partial Class AgregarUsuarios
         'btEliminar
         '
         Me.btEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btEliminar.Location = New System.Drawing.Point(166, 409)
+        Me.btEliminar.Location = New System.Drawing.Point(466, 410)
         Me.btEliminar.Name = "btEliminar"
         Me.btEliminar.Size = New System.Drawing.Size(109, 35)
         Me.btEliminar.TabIndex = 61
         Me.btEliminar.Text = "Eliminar"
-        Me.btEliminar.UseVisualStyleBackColor = True
+        Me.btEliminar.UseVisualStyleBackColor = False
         '
         'PictureBox9
         '
@@ -389,29 +391,29 @@ Partial Class AgregarUsuarios
         'btModificar
         '
         Me.btModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btModificar.Location = New System.Drawing.Point(310, 409)
+        Me.btModificar.Location = New System.Drawing.Point(610, 410)
         Me.btModificar.Name = "btModificar"
         Me.btModificar.Size = New System.Drawing.Size(109, 35)
         Me.btModificar.TabIndex = 64
         Me.btModificar.Text = "Modificar"
-        Me.btModificar.UseVisualStyleBackColor = True
+        Me.btModificar.UseVisualStyleBackColor = False
         Me.btModificar.Visible = False
         '
         'btLimpiar
         '
         Me.btLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btLimpiar.Location = New System.Drawing.Point(550, 409)
+        Me.btLimpiar.Location = New System.Drawing.Point(850, 410)
         Me.btLimpiar.Name = "btLimpiar"
         Me.btLimpiar.Size = New System.Drawing.Size(133, 35)
         Me.btLimpiar.TabIndex = 65
         Me.btLimpiar.Text = "Limpiar campos"
-        Me.btLimpiar.UseVisualStyleBackColor = True
+        Me.btLimpiar.UseVisualStyleBackColor = False
         '
         'AgregarUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1005, 456)
         Me.Controls.Add(Me.btLimpiar)
         Me.Controls.Add(Me.btModificar)
@@ -441,7 +443,9 @@ Partial Class AgregarUsuarios
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.txtPIN)
         Me.Controls.Add(Me.txtNumero)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AgregarUsuarios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AgregarUsuarios"
         CType(Me.dgUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

@@ -3,7 +3,7 @@
 Public Class LoginPIN
     Dim objConexion = New Conexion()
     Dim objMenu = New Menu()
-    Dim intentos, Contador
+    Dim intentos = 3, Contador = 0
 
     Public Sub New()
         ' This call is required by the designer.
@@ -13,6 +13,7 @@ Public Class LoginPIN
 
     Private Sub tbPIN_TextChanged(sender As Object, e As EventArgs) Handles tbPIN.TextChanged
         If (tbPIN.Text.Length = 4) Then
+
             If (objConexion.ValidarPIN(Convert.ToInt32(tbPIN.Text))) Then
                 ''mandar tipo usuario a menu 
                 ''objMenu.EstablecerTipoUsuario(objConexion.Ingresar(tbPIN.Text))
@@ -20,11 +21,12 @@ Public Class LoginPIN
                 objMenu.Show
                 Me.Hide()
             ElseIf (intentos <> 0) Then
-                intentos = (2 - Contador)
-                lbIntentos.Text = (" Tienes " + (intentos + " intentos"))
+                Contador = (Contador + 1)
+                intentos = (intentos - 1)
+                lbIntentos.Text = (" Tienes " & (intentos & " intentos"))
                 MessageBox.Show("Contraseña incorrecta")
                 tbPIN.Clear()
-                Contador = (Contador + 1)
+
             End If
 
             If (Contador = 3) Then

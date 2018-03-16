@@ -22,6 +22,7 @@ Partial Class Recargas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Recargas))
         Me.button1 = New System.Windows.Forms.Button()
         Me.pictureBox6 = New System.Windows.Forms.PictureBox()
         Me.pictureBox5 = New System.Windows.Forms.PictureBox()
@@ -48,19 +49,19 @@ Partial Class Recargas
         'button1
         '
         Me.button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.button1.Location = New System.Drawing.Point(26, 385)
+        Me.button1.Image = Global.BanCP.My.Resources.Resources.btnAtras
+        Me.button1.Location = New System.Drawing.Point(29, 526)
         Me.button1.Name = "button1"
-        Me.button1.Size = New System.Drawing.Size(116, 38)
+        Me.button1.Size = New System.Drawing.Size(178, 50)
         Me.button1.TabIndex = 28
-        Me.button1.Text = "Atras"
-        Me.button1.UseVisualStyleBackColor = True
+        Me.button1.UseVisualStyleBackColor = False
         '
         'pictureBox6
         '
         Me.pictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.pictureBox6.Image = Global.BanCP.My.Resources.Resources.tam
-        Me.pictureBox6.Location = New System.Drawing.Point(349, 226)
+        Me.pictureBox6.Location = New System.Drawing.Point(352, 367)
         Me.pictureBox6.Name = "pictureBox6"
         Me.pictureBox6.Size = New System.Drawing.Size(422, 65)
         Me.pictureBox6.TabIndex = 27
@@ -71,7 +72,7 @@ Partial Class Recargas
         Me.pictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.pictureBox5.Image = Global.BanCP.My.Resources.Resources.num
-        Me.pictureBox5.Location = New System.Drawing.Point(384, 115)
+        Me.pictureBox5.Location = New System.Drawing.Point(387, 256)
         Me.pictureBox5.Name = "pictureBox5"
         Me.pictureBox5.Size = New System.Drawing.Size(359, 65)
         Me.pictureBox5.TabIndex = 26
@@ -81,17 +82,18 @@ Partial Class Recargas
         '
         Me.pictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.Logo
-        Me.pictureBox2.Location = New System.Drawing.Point(440, 12)
+        Me.pictureBox2.Image = Global.BanCP.My.Resources.Resources.minibancp
+        Me.pictureBox2.Location = New System.Drawing.Point(342, 12)
         Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(271, 81)
+        Me.pictureBox2.Size = New System.Drawing.Size(154, 154)
+        Me.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.pictureBox2.TabIndex = 25
         Me.pictureBox2.TabStop = False
         '
         'tbnumero
         '
         Me.tbnumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbnumero.Location = New System.Drawing.Point(457, 186)
+        Me.tbnumero.Location = New System.Drawing.Point(460, 327)
         Me.tbnumero.Name = "tbnumero"
         Me.tbnumero.Size = New System.Drawing.Size(186, 29)
         Me.tbnumero.TabIndex = 24
@@ -102,7 +104,7 @@ Partial Class Recargas
         Me.comboCantidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.comboCantidad.FormattingEnabled = True
         Me.comboCantidad.Items.AddRange(New Object() {"20", "30", "50", "100", "200", "500"})
-        Me.comboCantidad.Location = New System.Drawing.Point(489, 316)
+        Me.comboCantidad.Location = New System.Drawing.Point(492, 457)
         Me.comboCantidad.Name = "comboCantidad"
         Me.comboCantidad.Size = New System.Drawing.Size(154, 32)
         Me.comboCantidad.TabIndex = 23
@@ -111,11 +113,11 @@ Partial Class Recargas
         '
         Me.btPagar.Enabled = False
         Me.btPagar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btPagar.Location = New System.Drawing.Point(506, 366)
+        Me.btPagar.Image = Global.BanCP.My.Resources.Resources.btnPagar
+        Me.btPagar.Location = New System.Drawing.Point(452, 507)
         Me.btPagar.Name = "btPagar"
-        Me.btPagar.Size = New System.Drawing.Size(116, 38)
+        Me.btPagar.Size = New System.Drawing.Size(173, 52)
         Me.btPagar.TabIndex = 22
-        Me.btPagar.Text = "Pagar"
         Me.btPagar.UseVisualStyleBackColor = True
         '
         'panel1
@@ -127,7 +129,7 @@ Partial Class Recargas
         Me.panel1.Controls.Add(Me.rdatt)
         Me.panel1.Controls.Add(Me.rdMovistar)
         Me.panel1.Controls.Add(Me.rdTelcel)
-        Me.panel1.Location = New System.Drawing.Point(21, 12)
+        Me.panel1.Location = New System.Drawing.Point(29, 196)
         Me.panel1.Name = "panel1"
         Me.panel1.Size = New System.Drawing.Size(312, 314)
         Me.panel1.TabIndex = 21
@@ -196,8 +198,8 @@ Partial Class Recargas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.BanCP.My.Resources.Resources.image
-        Me.ClientSize = New System.Drawing.Size(795, 448)
+        Me.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ClientSize = New System.Drawing.Size(787, 588)
         Me.Controls.Add(Me.button1)
         Me.Controls.Add(Me.pictureBox6)
         Me.Controls.Add(Me.pictureBox5)
@@ -206,7 +208,9 @@ Partial Class Recargas
         Me.Controls.Add(Me.comboCantidad)
         Me.Controls.Add(Me.btPagar)
         Me.Controls.Add(Me.panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Recargas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Recargas"
         CType(Me.pictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox5, System.ComponentModel.ISupportInitialize).EndInit()

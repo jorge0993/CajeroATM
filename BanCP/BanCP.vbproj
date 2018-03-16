@@ -358,5 +358,47 @@
   <ItemGroup>
     <None Include="Resources\telcel-logo-mexico.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancplogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minibancp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancplogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancp11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de Credito2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRetiros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSaldo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMovimientos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCambiarPIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAtras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPagar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

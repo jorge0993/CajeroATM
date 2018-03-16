@@ -56,4 +56,8 @@
         rdLuz.Checked = False
         rdMegacable.Checked = False
     End Sub
+
+    Private Sub PagoServicios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

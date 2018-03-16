@@ -24,15 +24,26 @@ Partial Class Reporte
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reporte))
+        Me.ReporteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BanCPDataSet = New BanCP.BanCPDataSet()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.btAtras = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.BanCPDataSet = New BanCP.BanCPDataSet()
-        Me.ReporteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ReporteTableAdapter = New BanCP.BanCPDataSetTableAdapters.ReporteTableAdapter()
-        CType(Me.BanCPDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ReporteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BanCPDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ReporteBindingSource
+        '
+        Me.ReporteBindingSource.DataMember = "Reporte"
+        Me.ReporteBindingSource.DataSource = Me.BanCPDataSet
+        '
+        'BanCPDataSet
+        '
+        Me.BanCPDataSet.DataSetName = "BanCPDataSet"
+        Me.BanCPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ReportViewer1
         '
@@ -53,7 +64,7 @@ Partial Class Reporte
         Me.btAtras.Size = New System.Drawing.Size(116, 38)
         Me.btAtras.TabIndex = 18
         Me.btAtras.Text = "Cancelar"
-        Me.btAtras.UseVisualStyleBackColor = True
+        Me.btAtras.UseVisualStyleBackColor = False
         '
         'Button1
         '
@@ -63,17 +74,7 @@ Partial Class Reporte
         Me.Button1.Size = New System.Drawing.Size(116, 38)
         Me.Button1.TabIndex = 19
         Me.Button1.Text = "Aceptar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'BanCPDataSet
-        '
-        Me.BanCPDataSet.DataSetName = "BanCPDataSet"
-        Me.BanCPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ReporteBindingSource
-        '
-        Me.ReporteBindingSource.DataMember = "Reporte"
-        Me.ReporteBindingSource.DataSource = Me.BanCPDataSet
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'ReporteTableAdapter
         '
@@ -87,10 +88,12 @@ Partial Class Reporte
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btAtras)
         Me.Controls.Add(Me.ReportViewer1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Reporte"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Reporte"
-        CType(Me.BanCPDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ReporteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BanCPDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
