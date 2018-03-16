@@ -13,7 +13,7 @@ Public Class LoginPIN
 
     Private Sub tbPIN_TextChanged(sender As Object, e As EventArgs) Handles tbPIN.TextChanged
         If (tbPIN.Text.Length = 4) Then
-            If ((objConexion.Ingresar(tbPIN.Text) = 1) OrElse (objConexion.Ingresar(tbPIN.Text) = 2)) Then
+            If (objConexion.ValidarPIN(Convert.ToInt32(tbPIN.Text))) Then
                 ''mandar tipo usuario a menu 
                 ''objMenu.EstablecerTipoUsuario(objConexion.Ingresar(tbPIN.Text))
                 ''Program.TipoUsuario = objConexion.Ingresar(tbPIN.Text)

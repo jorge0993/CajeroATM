@@ -39,9 +39,9 @@ Partial Class Inicio
         '
         'tbTarjeta
         '
-        Me.tbTarjeta.Location = New System.Drawing.Point(104, 230)
+        Me.tbTarjeta.Location = New System.Drawing.Point(107, 296)
         Me.tbTarjeta.Name = "tbTarjeta"
-        Me.tbTarjeta.Size = New System.Drawing.Size(100, 20)
+        Me.tbTarjeta.Size = New System.Drawing.Size(130, 20)
         Me.tbTarjeta.TabIndex = 15
         '
         'pictureBox6
