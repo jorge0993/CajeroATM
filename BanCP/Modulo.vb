@@ -1,3 +1,3 @@
 ﻿Module Modulo
-    Public Tarjeta As String = "140202220051"
+    Public Tarjeta As String
 End Module

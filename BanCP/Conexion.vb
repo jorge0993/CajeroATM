@@ -180,8 +180,6 @@ Public Class Conexion
     End Function
 
     Public Sub RestarSaldo(Cantidad As Integer)
-
-
         Dim SaldoNuevo As Integer = 0
 
         cmd = New SqlCommand("Select * from Usuarios where Numero_tarjeta = '" & Tarjeta & "'", cn)
@@ -194,10 +192,27 @@ Public Class Conexion
         cmd = New SqlCommand("update Usuarios set Saldo=@Saldo where Numero_tarjeta = '" & Tarjeta & "'", cn)
         cmd.Parameters.AddWithValue("Saldo", SaldoNuevo)
         cmd.ExecuteNonQuery()
-
-
-
     End Sub
+
+    Public Function Ingresar(pin As String)
+        Dim contador As Integer = 0
+        Try
+            'permite realizar instrucciones sql
+            cmd = New SqlCommand(("Select * from Usuarios where Numero_tarjeta='" & (Tarjeta & "'")), cn)
+            'realzar la instruccion anterior
+            dr = cmd.ExecuteReader
+            'recorriendo para ver si encuentra registros con el expendiente anterior
+
+            While dr.Read
+                contador = (contador + 1)
+            End While
+
+        Catch ex As Exception
+            MessageBox.Show(("No se llevo a cabo la consulta " + ex.ToString))
+        End Try
+        cn.Close()
+        Return contador
+    End Function
 
     Public Function ValidarPIN(ActualPIN As Integer)
         Dim usuario As Boolean = False
