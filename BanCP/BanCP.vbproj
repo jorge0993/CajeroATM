@@ -47,12 +47,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -79,6 +82,14 @@
     </Compile>
     <Compile Include="AgregarUsuarios.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanCPDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BanCPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BanCPDataSet.vb">
+      <DependentUpon>BanCPDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="CambiarPIN.Designer.vb">
       <DependentUpon>CambiarPIN.vb</DependentUpon>
@@ -147,6 +158,12 @@
     <Compile Include="Recargas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reporte.Designer.vb">
+      <DependentUpon>Reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Retiros.Designer.vb">
       <DependentUpon>Retiros.vb</DependentUpon>
     </Compile>
@@ -194,6 +211,10 @@
     <EmbeddedResource Include="Recargas.resx">
       <DependentUpon>Recargas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_movimientos.rdlc" />
     <EmbeddedResource Include="Retiros.resx">
       <DependentUpon>Retiros.vb</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +223,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BanCPDataSet.xsc">
+      <DependentUpon>BanCPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BanCPDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BanCPDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BanCPDataSet.xss">
+      <DependentUpon>BanCPDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

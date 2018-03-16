@@ -26,10 +26,13 @@ Partial Class Movimientos
         Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.button1 = New System.Windows.Forms.Button()
         Me.btAtras = New System.Windows.Forms.Button()
-        Me.dataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.dgMovimientos = New System.Windows.Forms.DataGridView()
+        Me.Tarjeta = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoMovimiento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CantidadMovimiento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgMovimientos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pictureBox2
@@ -64,27 +67,45 @@ Partial Class Movimientos
         Me.btAtras.Text = "Atras"
         Me.btAtras.UseVisualStyleBackColor = False
         '
-        'dataGridView1
+        'dgMovimientos
         '
-        Me.dataGridView1.AllowUserToAddRows = False
-        Me.dataGridView1.AllowUserToDeleteRows = False
-        Me.dataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dataGridView1.Location = New System.Drawing.Point(138, 177)
-        Me.dataGridView1.Name = "dataGridView1"
-        Me.dataGridView1.ReadOnly = True
-        Me.dataGridView1.Size = New System.Drawing.Size(446, 218)
-        Me.dataGridView1.TabIndex = 18
+        Me.dgMovimientos.AllowUserToAddRows = False
+        Me.dgMovimientos.AllowUserToDeleteRows = False
+        Me.dgMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgMovimientos.BackgroundColor = System.Drawing.Color.White
+        Me.dgMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgMovimientos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Tarjeta, Me.TipoMovimiento, Me.CantidadMovimiento})
+        Me.dgMovimientos.Location = New System.Drawing.Point(93, 101)
+        Me.dgMovimientos.Name = "dgMovimientos"
+        Me.dgMovimientos.ReadOnly = True
+        Me.dgMovimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgMovimientos.Size = New System.Drawing.Size(446, 218)
+        Me.dgMovimientos.TabIndex = 18
         '
-        'Label4
+        'Tarjeta
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Bentham", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(250, 123)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(212, 39)
-        Me.Label4.TabIndex = 38
-        Me.Label4.Text = "Movimientos"
+        Me.Tarjeta.DataPropertyName = "Tarjeta"
+        Me.Tarjeta.HeaderText = "No. Tarjeta"
+        Me.Tarjeta.Name = "Tarjeta"
+        Me.Tarjeta.ReadOnly = True
+        Me.Tarjeta.Width = 85
+        '
+        'TipoMovimiento
+        '
+        Me.TipoMovimiento.DataPropertyName = "TipoMovimiento"
+        Me.TipoMovimiento.HeaderText = "Movimiento"
+        Me.TipoMovimiento.Name = "TipoMovimiento"
+        Me.TipoMovimiento.ReadOnly = True
+        Me.TipoMovimiento.Width = 86
+        '
+        'CantidadMovimiento
+        '
+        Me.CantidadMovimiento.DataPropertyName = "CantidadMovimiento"
+        Me.CantidadMovimiento.HeaderText = "Cantidad"
+        Me.CantidadMovimiento.Name = "CantidadMovimiento"
+        Me.CantidadMovimiento.ReadOnly = True
+        Me.CantidadMovimiento.Width = 74
+
         '
         'Movimientos
         '
@@ -96,13 +117,13 @@ Partial Class Movimientos
         Me.Controls.Add(Me.pictureBox2)
         Me.Controls.Add(Me.button1)
         Me.Controls.Add(Me.btAtras)
-        Me.Controls.Add(Me.dataGridView1)
+        Me.Controls.Add(Me.dgMovimientos)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Movimientos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Movimientos"
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgMovimientos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -110,6 +131,8 @@ Partial Class Movimientos
     Private WithEvents pictureBox2 As PictureBox
     Private WithEvents button1 As Button
     Private WithEvents btAtras As Button
-    Private WithEvents dataGridView1 As DataGridView
-    Friend WithEvents Label4 As Label
+    Private WithEvents dgMovimientos As DataGridView
+    Friend WithEvents Tarjeta As DataGridViewTextBoxColumn
+    Friend WithEvents TipoMovimiento As DataGridViewTextBoxColumn
+    Friend WithEvents CantidadMovimiento As DataGridViewTextBoxColumn
 End Class
