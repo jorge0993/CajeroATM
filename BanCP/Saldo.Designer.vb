@@ -36,7 +36,7 @@ Partial Class Saldo
         Me.lbSaldo.AutoSize = True
         Me.lbSaldo.BackColor = System.Drawing.Color.Transparent
         Me.lbSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbSaldo.ForeColor = System.Drawing.Color.Transparent
+        Me.lbSaldo.ForeColor = System.Drawing.Color.Black
         Me.lbSaldo.Location = New System.Drawing.Point(301, 267)
         Me.lbSaldo.Name = "lbSaldo"
         Me.lbSaldo.Size = New System.Drawing.Size(123, 37)

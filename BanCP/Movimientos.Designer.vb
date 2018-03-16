@@ -83,7 +83,7 @@ Partial Class Movimientos
         '
         Me.dgMovimientos.AllowUserToAddRows = False
         Me.dgMovimientos.AllowUserToDeleteRows = False
-        Me.dgMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgMovimientos.BackgroundColor = System.Drawing.Color.White
         Me.dgMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgMovimientos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Tarjeta, Me.TipoMovimiento, Me.CantidadMovimiento})
@@ -100,7 +100,6 @@ Partial Class Movimientos
         Me.Tarjeta.HeaderText = "No. Tarjeta"
         Me.Tarjeta.Name = "Tarjeta"
         Me.Tarjeta.ReadOnly = True
-        Me.Tarjeta.Width = 85
         '
         'TipoMovimiento
         '
@@ -108,7 +107,6 @@ Partial Class Movimientos
         Me.TipoMovimiento.HeaderText = "Movimiento"
         Me.TipoMovimiento.Name = "TipoMovimiento"
         Me.TipoMovimiento.ReadOnly = True
-        Me.TipoMovimiento.Width = 86
         '
         'CantidadMovimiento
         '
@@ -116,7 +114,6 @@ Partial Class Movimientos
         Me.CantidadMovimiento.HeaderText = "Cantidad"
         Me.CantidadMovimiento.Name = "CantidadMovimiento"
         Me.CantidadMovimiento.ReadOnly = True
-        Me.CantidadMovimiento.Width = 74
         '
         'Movimientos
         '

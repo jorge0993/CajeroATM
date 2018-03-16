@@ -23,4 +23,8 @@ Public Class Inicio
         End If
 
     End Sub
+
+    Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tbTarjeta.Focus()
+    End Sub
 End Class

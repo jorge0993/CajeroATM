@@ -116,8 +116,10 @@ Public Class Conexion
             End If
         Catch ex As Exception
             MessageBox.Show("No se llevo a cabo la consulta " + ex.ToString())
+            dr.Close()
+
         End Try
-        cn.Close()
+        dr.Close()
         Return tipo
 
     End Function
